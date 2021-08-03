@@ -1,0 +1,143 @@
+body,html {
+    height: 100%;
+    margin: 0;
+    
+}
+
+/* navbar */
+/* ====================================================================== */
+.brand-logo{
+    font-family: 'Cinzel Decorative', cursive;
+    /* font-size: 30px; */
+}
+
+
+.parallax-container {
+    height: 67%;
+  }
+
+.section {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+
+.secTitle{
+    font-family: 'Cardo', serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+
+iframe{
+    width:560px; 
+    height:315px;
+}
+
+/* Welcome name */
+/* ====================================================================== */
+.caption {
+    position: absolute;
+    top: 22%;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 55px;
+    font-family: 'Cinzel', serif;
+    background-color: rgba(255, 81, 0,0.77);
+}
+
+/* Small Screens */
+@media screen and (min-width:300px) and (max-width:349px){
+   
+    #logo{
+        font-size: 10px;
+        left:45%;
+    }
+    
+    .parallax-container {
+        height: 20%;
+      }
+
+      #header{
+          font-size: 30px;
+      }
+
+    .caption {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: 'Cinzel', serif;
+    background-color: rgba(255, 81, 0,0.77);
+    }  
+    iframe{
+        width:270px; 
+        height:250px;
+    }
+}
+
+/* Mid */
+@media screen and (min-width:350px) and (max-width:641px){
+    #logo{
+        font-size: 12px;
+        left: 45%;
+    }
+    .parallax-container {
+        height: 27%;
+      }
+
+      #header{
+        font-size: 35px;
+    }
+
+    .caption {
+    position: absolute;
+    top: 17%;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Cinzel', serif;
+    background-color: rgba(255, 81, 0,0.77);
+    }   
+
+    iframe{
+        width:320px; 
+        height:250px;
+    }
+  
+}
+
+
+@media screen and (min-width:642px) and (max-width:1024px){
+    #logo{
+        font-size: 16px;
+    }
+    .parallax-container {
+        height: 37%;
+    }
+
+    .caption {
+        position: absolute;
+        top: 27%;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        font-size: 30px;
+        font-family: 'Cinzel', serif;
+        background-color: rgba(255, 81, 0,0.77);
+        } 
+
+        iframe{
+            width:460px; 
+            height:315px;
+        }
+}
+
+.indentation{
+    text-indent: 50px;
+}
+
