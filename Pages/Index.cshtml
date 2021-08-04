@@ -3,12 +3,11 @@
 @{
     ViewData["Title"] = "Classical Baptist Press";
 }
-
 <!-- Container element -->
 <div class="parallax">
     <div class="hero-text">
         <div class="parallaxText">
-            Classical <br />Baptist Press
+            Classical <br />Baptist Press testr
         </div>
     </div>
 </div>
@@ -24,7 +23,7 @@
     </div>
     <div class="row">
         <div class="col-sm-12 col-md-4">
-            <img src="./assets/images/image1.jpg" alt="Pastor_Pic" class="img-fluid">
+            <img src="~/images/image1.jpg" alt="Pastor_Pic" class="img-fluid">
             <br>
         </div>
         <div class="col">
@@ -57,14 +56,14 @@
                 Great Commission through the Gospel, evangelism and the publication of Biblical writings.
             </p>
             <div class="d-flex justify-content-end">
-                <button class="btn btn-secondary " onclick="window.location.href ='./moreAbout.html'">
+                <a asp-page="/MoreAbout" class="btn btn-secondary">
                     Read More
-                </button>
+                </a>
             </div>
             <br />
             <div class="d-flex justify-content-around">
                 <a href="https://www.firstloveradio.org/" class="" target="blank">
-                    <img src="./assets/images/radio.jpg" alt="According to thy word" class="img-fluid">
+                    <img src="~/images/radio.jpg" alt="According to thy word" class="img-fluid">
                 </a>
             </div>
             <br />
@@ -81,5 +80,6 @@
             </div>
         </div>
     </div>
+    <br />
     <hr />
 </section>

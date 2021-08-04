@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPClassicalBaptistPress", "RPClassicalBaptistPress.csproj", "{965FFDB5-F103-4886-ADC4-952B3BF4ED86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPClassicalBaptistPress", "RPClassicalBaptistPress.csproj", "{965FFDB5-F103-4886-ADC4-952B3BF4ED86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
