@@ -7,19 +7,24 @@ body, html {
     margin: 0;
 }
 
+audio {
+    width: 300px;
+    box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
+    border-radius: 90px;
+    transform: scale(1.05);
+}
+
 #wrap {
     min-height: 100%;
 }
 
-.parallaxText {
-    width: 100%;
-    padding: 10px;
-    color: #ffffff;
-    font-size: 55px;
+.parallax {
+    background-image: url("../images/books.jpg");
+    height: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    text-align: center;
-    font-family: 'Cinzel', serif;
-    background-color: rgba(255, 81, 0,0.77);
 }
 
 .footer {

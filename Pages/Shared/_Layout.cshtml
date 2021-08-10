@@ -3,41 +3,39 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Classical Baptist Press</title>
+    <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a asp-page="/Index" class="navbar-brand" id="logo">Classical Baptist Press </a>
-                <button class="navbar-toggler"
-                        type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top flex-column">
+            <div class="d-flex">
+                <a id="brandlogo" class="navbar-brand d-inline-block" style="font-family: 'Cormorant', serif;" asp-page="/Index">
+                        Classical Baptist Press
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link" asp-page="/About">About</a></li>
-                        <li class="nav-item active"><a class="nav-link" asp-page="/Publications">Publications</a></li>
-                        <li class="nav-item active"><a class="nav-link" asp-page="/Media">Media</a></li>
-                        <li class="nav-item active"><a class="nav-link" asp-page="/Contact">Contact</a></li>
-                        <li class="nav-item active"><a class="nav-link" asp-page="/PublishWithUs">Publish With Us</a></li>
-                    </ul>
-                </div>
+            </div>
+            <div class="collapse navbar-collapse navbar-dark bg-dark" id="navbarNavDropdown">
+                <ul class="navbar-nav d-flex justify-content-between">
+                    <li class="nav-item"><a class="nav-link" asp-page="/Index">About</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-page="/Publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-page="/Media">Media</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-page="/Contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-page="/PublishWithUs">Publish With Us</a></li>
+                </ul>
             </div>
         </nav>
     </header>
+    <div class="parallax" style="background-image: url('@ViewData["ParallaxImgPath"]');"></div>
+    <br />
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
     <footer class="footer">
         <div class="container center-align">&copy; 2019 Classical Baptist Press</div>
         <span class="center" id="siteseal">

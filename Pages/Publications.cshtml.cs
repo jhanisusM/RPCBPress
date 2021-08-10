@@ -9,6 +9,20 @@ namespace RPClassicalBaptistPress.Pages
 {
     public class PublicationsModel : PageModel
     {
+        public class Publications
+        {
+            public string id { get; set; }
+            public string BtnStyle { get; set; }
+            public string BtnLabel { get; set; }
+            public string Title { get; set; }
+            public string SubTitle { get; set; }
+            public string Paragraph { get; set; }
+            public string Device { get; set; }
+            public string role { get; set; }
+            public string ImgSorce { get; set; }
+
+        }
+
         public void OnGet()
         {
         }

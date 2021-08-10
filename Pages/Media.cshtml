@@ -1,12 +1,16 @@
 ﻿@page
 @model RPClassicalBaptistPress.Pages.MediaModel
 @{
+    ViewData["Title"] = "Classical Baptist Press - Media";
+    ViewData["ParallaxImgPath"] = "../images/media.jpg";
 }
 
 <!-- Container element -->
 <div class="parallax"></div>
 <br />
 <!--Main Body-->
+<br />
+<br />
 <section class="container" id="wrap">
     <div class="row">
         <div class="col">
@@ -92,7 +96,7 @@
     <div class="row">
         <div class="col-sm">
             <!--<div class="col">-->
-            <img src="./assets//images/baptism.jpg" alt="baptism" class="img-fluid" style="width:300px">
+            <img src="~/images/baptism.jpg" alt="baptism" class="img-fluid" style="width:300px">
             <p></p>
             <button class="btn btn-secondary"
                     onclick="window.location.href='https://www.9marks.org/article/baptism-is-a-churchs-act/?utm_source=eml-article&utm_medium=eml-article&utm_campaign=eml-article&mc_cid=d551c3ff11&mc_eid=4b26d90fc2'"
