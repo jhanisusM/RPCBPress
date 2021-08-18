@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Classical Baptist Press - Media";
     ViewData["ParallaxImgPath"] = "../images/media.jpg";
-    var mediaFiles = Media.GetMediaFiles();
+    var mediaFilesInfo = Media.GetMediaFilesInfo();
 
 }
 <!-- Container element -->
@@ -21,7 +21,7 @@
             <br>
         </div>
     </div>
-    @foreach (var mfile in mediaFiles)
+    @foreach (var mfile in mediaFilesInfo)
     {
         <div class="row ">
             <div class="col-sm">

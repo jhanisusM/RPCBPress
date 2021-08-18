@@ -17,7 +17,7 @@ namespace RPClassicalBaptistPress.Pages
             public string SourcePath { get; set; }
             public string EmbeddedHTMLMediaFile { get; set; }
         }
-        public static List<MediaFiles> GetMediaFiles()
+        public static List<MediaFiles> GetMediaFilesInfo()
         {
             List<MediaFiles> output = new List<MediaFiles>
             {

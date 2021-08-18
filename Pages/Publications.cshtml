@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Publications || Classical Baptist Press";
     ViewData["ParallaxImgPath"] = "../images/press.jpg";
+    var publicationsInfo = PublicationsModel.GetPublicationInfo();
 }
 
 <script src="https://js.stripe.com/v3"></script>
@@ -15,1115 +16,122 @@
         </div>
     </div>
     <br />
-    <!-- 28 Truths -->
-    <div class="row">
-        <div class="col-sm">
-            <img src="assets/images/28.JPG" alt="portrait" class="img-fluid thumbnails ">
-            <br>
-            <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-            <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-                    id="checkout-button-sku_FmzE9du2jC7IGE"
-                    role="link"
-                    type="button">
-                <i class="material-icons right">shopping_cart</i>
-                Click to Purchase (Secure Site)
-            </button>
-
-            <div id="error-message"></div>
-
-            <script>
-                    (function () {
-                        var stripe = Stripe('pk_live_uVdFif1mqEmv2Qh53qBTTjRC00qWWfmIvH');
-
-                        var checkoutButton = document.getElementById('checkout-button-sku_FmzE9du2jC7IGE');
-                        checkoutButton.addEventListener('click', function () {
-                            /*
-                             * When the customer clicks on the button, redirect
-                             * them to Checkout.
-                             */
-                            stripe.redirectToCheckout({
-                                lineItems: [{ price: 'sku_FmzE9du2jC7IGE', quantity: 1 }],
-                                mode: 'payment',
-                                /*
-                                 * Do not rely on the redirect to the successUrl for fulfilling
-                                 * purchases, customers may not always reach the success_url after
-                                 * a successful payment.
-                                 * Instead use one of the strategies described in
-                                 * https://stripe.com/docs/payments/checkout/fulfill-orders
-                                 */
-                                successUrl: 'https://classicalbaptist.press',
-                                cancelUrl: 'https://classicalbaptist.press/publication.html',
-                            })
-                                .then(function (result) {
-                                    if (result.error) {
-                                        /*
-                                         * If `redirectToCheckout` fails due to a browser or network
-                                         * error, display the localized error message to your customer.
-                                         */
-                                        var displayError = document.getElementById('error-message');
-                                        displayError.textContent = result.error.message;
-                                    }
-                                });
-                        });
-                    })();
-            </script>
-        </div>
-        <div class="col">
-            <h3 class="">
-                The Church of Jesus Christ: 28 Truths Every Christian Ought to
-                Learn
-            </h3>
-            <small>By Dr. John S. Waldrip (Author), Th.D.</small>
-            <p></p>
-            <p class="indentation">
-                An exhaustive guide to the New Testament's teaching into the nature of the Church of Jesus Christ.
-            </p>
-        </div>
-    </div>
-    <hr />
-    <!--LeaderGuide-->
-    <div class="row">
-        <div class="col">
-            <img src="assets/images/LeaderGuide.png" alt="portrait" class="img-fluid thumbnails">
-            <br>
-            <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-                    id="checkout-button-sku_G96NoRLr9JV2zC"
-                    role="link">
-                <i class="material-icons right">shopping_cart</i>
-                Click to Purchase (Secure Site)
-            </button>
-            <div id="error-message"></div>
-            <script>
-                    (function () {
-                        var stripe = Stripe('pk_live_uVdFif1mqEmv2Qh53qBTTjRC00qWWfmIvH');
-
-                        var checkoutButton = document.getElementById('checkout-button-sku_G96NoRLr9JV2zC');
-                        checkoutButton.addEventListener('click', function () {
-                            // When the customer clicks on the button, redirect
-                            // them to Checkout.
-                            stripe.redirectToCheckout({
-                                items: [{ sku: 'sku_G96NoRLr9JV2zC', quantity: 1 }],
-
-                                // Do not rely on the redirect to the successUrl for fulfilling
-                                // purchases, customers may not always reach the success_url after
-                                // a successful payment.
-                                // Instead use one of the strategies described in
-                                // https://stripe.com/docs/payments/checkout/fulfillment
-                                successUrl: 'https://classicalbaptist.press',
-                                cancelUrl: 'https://classicalbaptist.press/publication.html',
-                            })
-                                .then(function (result) {
-                                    if (result.error) {
-                                        // If `redirectToCheckout` fails due to a browser or network
-                                        // error, display the localized error message to your customer.
-                                        var displayError = document.getElementById('error-message');
-                                        displayError.textContent = result.error.message;
-                                    }
-                                });
-                        });
-                    })();
-            </script>
-        </div>
-        <div class="col">
-            <h3 class="">
-                A Basic <em>Leader's</em> Manual for the Study of Ecclesiology
-            </h3>
-            <small>Stanford E. Murrell, Ph.D.</small>
-            <p></p>
-            <p class="indentation">
-                An exhaustive <em>Leader's</em> guide to the New Testament's teaching into the nature of the Church of Jesus Christ.
-            </p>
-        </div>
-    </div>
-    <hr />
-    <!--Learners aderGuide-->
-    <div class="row">
-        <div class="col">
-            <img src="assets/images/LearnerGuide.png" alt="portrait" class="img-fluid thumbnails">
-            <br>
-            <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-                    id="checkout-button-sku_G96fzawHrMNbcC"
-                    role="link">
-                Click to Purchase (Secure Site)
-            </button>
-            <div id="error-message"></div>
-            <script>
-                    (function () {
-                        var stripe = Stripe('pk_live_uVdFif1mqEmv2Qh53qBTTjRC00qWWfmIvH');
-
-                        var checkoutButton = document.getElementById('checkout-button-sku_G96fzawHrMNbcC');
-                        checkoutButton.addEventListener('click', function () {
-                            // When the customer clicks on the button, redirect
-                            // them to Checkout.
-                            stripe.redirectToCheckout({
-                                items: [{ sku: 'sku_G96fzawHrMNbcC', quantity: 1 }],
-
-                                // Do not rely on the redirect to the successUrl for fulfilling
-                                // purchases, customers may not always reach the success_url after
-                                // a successful payment.
-                                // Instead use one of the strategies described in
-                                // https://stripe.com/docs/payments/checkout/fulfillment
-                                successUrl: 'https://classicalbaptist.press',
-                                cancelUrl: 'https://classicalbaptist.press/publication.html',
-                            })
-                                .then(function (result) {
-                                    if (result.error) {
-                                        // If `redirectToCheckout` fails due to a browser or network
-                                        // error, display the localized error message to your customer.
-                                        var displayError = document.getElementById('error-message');
-                                        displayError.textContent = result.error.message;
-                                    }
-                                });
-                        });
-                    })();
-            </script>
-        </div>
-        <div class="col">
-            <h3 class="">
-                A Basic <em>Learner's</em> Manual for the Study of Ecclesiology
-            </h3>
-            <small>Stanford E. Murrell, Ph.D.</small>
-            <p></p>
-            <p class="indentation">
-                An exhaustive <em>Learner's</em> guide to the New Testament's teaching into the nature of the Church of Jesus Christ.
-            </p>
-        </div>
-    </div>
-    <hr />
-    <!--Suffer The Children Session-->
-    <div class="row">
-        <div class="col s12 l4">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/51zMJt%2BS1wL.jpg" alt="portrait"
-                 class="img-fluid thumbnails">
-            <br>
-            <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-                    onclick="window.location.href='https://www.amazon.com/Suffer-Children-tragic-legacies-Bushnell-ebook/dp/B072FHM89F'"
-                    target="blank">
-                Click to Purchase
-                <i class="material-icons right">shopping_cart</i>
-            </button>
-        </div>
-        <div class="col s12 l6 offset-l1">
-            <h3 class="">
-                Suffer The Children: (The tragic legacies of Finney &
-                Bushnell)
-            </h3>
-            <strong> Kindle Edition </strong>
-            <small>By Dr. John S. Waldrip (Author)</small>
-            <p></p>
-            <p class="indentation">
-                No one lives in isolation. Everyone functions in an environment that is formed by what has occurred
-                in the past. Have you considered how very differently child evangelism differs from past eras? Are
-                you aware of the influence of men now forgotten on how the Gospel is presented to children? In this
-                book you will be introduced to the influences of two men you likely have never heard of before.
-                Just as importantly, it is likely that one or both of these influential men is unknown to your
-                pastor. This book begins to set the record straight so parents and pastors will not inadvertently
-                be more barriers than escorts of children coming to the Savior.
-            </p>
-        </div>
-    </div>
-    <hr />
-    <!--The Blight of Islam-->
-    <div class="row">
-        <div class="col s12 l4 push-l7 offset-l1">
-            <img src="https://m.media-amazon.com/images/I/51yzWq3Z+6L.jpg" alt="portrait"
-                 class="img-fluid thumbnails">
-            <br>
-            <!-- Load Stripe.js on your website. -->
-            <script src="https://js.stripe.com/v3"></script>
-
-            <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-            <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-                    id="checkout-button-sku_G95Ms5hhIOHwyh"
-                    role="link"
-                    type="button">
-                <i class="material-icons right">shopping_cart</i>
-                Click to Purchase (Secure Site)
-            </button>
-
-            <div id="error-message"></div>
-
-            <script>
-                    (function () {
-                        var stripe = Stripe('pk_live_uVdFif1mqEmv2Qh53qBTTjRC00qWWfmIvH');
-
-                        var checkoutButton = document.getElementById('checkout-button-sku_G95Ms5hhIOHwyh');
-                        checkoutButton.addEventListener('click', function () {
-                            /*
-                             * When the customer clicks on the button, redirect
-                             * them to Checkout.
-                             */
-                            stripe.redirectToCheckout({
-                                lineItems: [{ price: 'sku_G95Ms5hhIOHwyh', quantity: 1 }],
-                                mode: 'payment',
-                                /*
-                                 * Do not rely on the redirect to the successUrl for fulfilling
-                                 * purchases, customers may not always reach the success_url after
-                                 * a successful payment.
-                                 * Instead use one of the strategies described in
-                                 * https://stripe.com/docs/payments/checkout/fulfill-orders
-                                 */
-                                successUrl: 'https://classicalbaptist.press',
-                                cancelUrl: 'https://classicalbaptist.press/publication.html',
-                            })
-                                .then(function (result) {
-                                    if (result.error) {
-                                        /*
-                                         * If `redirectToCheckout` fails due to a browser or network
-                                         * error, display the localized error message to your customer.
-                                         */
-                                        var displayError = document.getElementById('error-message');
-                                        displayError.textContent = result.error.message;
-                                    }
-                                });
-                        });
-                    })();
-            </script>
-        </div>
-        <div class="col s12 l6 pull-l5 right-align offset-l1">
-            <h3 class="">The Blight of Islam (Revised) </h3>
-            <strong> Kindle Edition </strong>
-            <small>By Dr. John S. Waldrip (Author), Senator James M. Inhofe (Foreword)</small>
-            <p></p>
-            <p class="indentation">
-                A well-reasoned comparison and contrast of the two largest religions in the world, the only two
-                religions claiming their holy books were given by revelation, and the only two religions that claim
-                to be for all humanity. The sources used are those of the two religious faiths to gain insight into
-                the founders of the two religions, Jesus and Mohammed.
-            </p>
-        </div>
-    </div>
-    <hr />
-    <!--Polemic Theology-->
-    <div class="row">
-        <div class="col">
-            <img src="./assets/images/bible.jpg" alt="bible" class="img-fluid thumbnails" />
-            <br>
-            <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-                    onclick="window.location.href='/assets/polemicTheology.pdf'"
-                    target="blank">
-                CLICK TO READ
-                <i class="material-icons right">picture_as_pdf</i>
-            </button>
-        </div>0
-        <div class="col">
-            <h3 class="">
-                Polemic Theology: How To Deal With Those Who Differ From Us
-            </h3>
-            <small>By Roger Nicole (Author)</small>
-            <p></p>
-            <div class="indentation">
-                Who does not encounter from time to time people who are not in complete agreement?
-                Whether it is between husbands and wives, parents and children, co-workers on the job
-                or fellow members in the church, it is impossible to live without disagreement.
-                Therefore it is good to seek to discover certain basic principles whereby we
-                may relate to those who differ from us.
-            </div>
-            <br />
-            <a class="btn btn-secondary btn-sm" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                CLICK TO READ MORE:
-            </a>
-            <div class="collapse" id="collapseExample">
+    @foreach (var pub in publicationsInfo)
+    {
+        <div class="row">
+            <div class="col-sm">
+                @Html.Raw(pub.EmbeddedHTMLPublicationImg)
                 <br />
-                <p class="indentation">
-                    It seems strange that one should desire to speak at all about Polemic Theology since we
-                    are now in an age when folks are more interested in ecumenism and irenics than in
-                    polemics. Furthermore, Polemic Theology appears to have been often rather ineffective.
-                    Christians have not managed in many cases to win over their opponents. They have shown
-                    themselves to be ornery; they have bypassed some fairly important prescriptions of
-                    Scripture; and in the end, they have not convinced very many people—sometimes not even
-                    themselves!
-                </p>
-                <p class="indentation">
-                    Under these circumstances one perhaps might desire to bypass a subject like this
-                    altogether. We are called upon by the Lord to contend earnestly for the faith
-                    (<a href="https://www.biblegateway.com/passage/?search=Jude+3&version=KJV"
-                        target="blank">
-                        Jude
-                        3
-                    </a>). That does not necessarily involve being contentious; but it involves
-                    avoiding compromise, standing forth for what we believe, standing forth for the truth
-                    of God—without welching at any particular moment. Thus we are bound to meet, at various
-                    points and on various levels, people with whom we disagree.
-                </p>
-                <p class="indentation">
-                    We disagree in some areas of Christian doctrine. We disagree as to some details of
-                    church administration. We disagree as to the way in which certain tasks of the church
-                    should be pursued. If we are careful to observe the principles that I would like to
-                    expound in this article, we may find that they are valuable not only in the religious
-                    field but also in the realms of politics, business and family.
-                </p>
-                <p class="indentation">
-                    Who does not encounter from time to time people who are not in complete agreement?
-                    Whether it is between husbands and wives, parents and children, co-workers on the job
-                    or fellow members in the church, it is impossible to live without disagreement.
-                    Therefore it is good to seek to discover certain basic principles whereby we
-                    may relate to those who differ from us. There are three major questions that we must
-                    ask; and I would like to emphasize very strongly that, in my judgment, we need to ask
-                    them precisely in the right order: <b> <a href="#one"> (1)</a></b> What do I owe the
-                    person who differs from me? <a href="#two"> <b>(2)</b> </a> What can I learn from the
-                    person who differs from me? <a href="#three"><b>(3)</b> </a> How can I cope with the
-                    person who differs from me?
-                </p>
-                <hr>
-                <p id="one" class="scrollspy">
-                    <h6><b>(1) What Do I Owe to the Person Who Differs From Me?</b></h6>
-                </p>
-                <p class="indentation">
-                    Many people overlook the first two questions and jump right away to: “How can I cope
-                    with this? How can I bash this person right down into the ground in order to annihilate
-                    objections and differences?” Obviously, if we jump to the third question from the
-                    start, it is not likely that we will be successful in winning over dissenters. So I
-                    suggest, first of all, that we need to face squarely the matter of our duties. We have
-                    obligations to people who differ from us. This does not involve agreeing with them. We
-                    have an obligation to the truth, and that has priority over agreement with any
-                    particular person.
-                </p>
-                <p class="indentation">
-                    If someone is not in the truth, we have no right to agree. We have no right even to
-                    minimize the importance of the difference. Consequently, we owe them neither consent
-                    nor indifference. But what we owe that person who differs from us, whoever that may be,
-                    is what we owe every human being—we owe them love. And we owe it to them to deal with
-                    them as we ourselves would like to be dealt with or treated.
-                    <a href="https://www.biblegateway.com/passage/?search=Matthew+7.12&version=KJV"
-                       target="blank">
-                        (Matthew 7:12).
-                    </a>
-                </p>
-                <p class="indentation">
-                    How then do we desire to be treated? <i> First </i>, we want people to know
-                    what we are saying or meaning. If we are going to voice differences, therefore, we have
-                    an obligation to make a serious effort to understand the person with whom we differ.
-                    That person may have published books or articles. Then we should be acquainted with
-                    those writings. It is not appropriate for us to voice sharp differences if we have
-                    neglected to read what is available. The person with whom we differ should have
-                    evidence that we have read carefully what has been written and that we have attempted
-                    to understand its meaning. In the case of an oral exchange where we don’t have any
-                    written words, we owe the person who differs from us the courtesy to listen carefully
-                    to what he or she says. Rather than preparing to pounce on that person the moment he or
-                    she stops talking, we should concentrate on apprehending precisely what his or her
-                    position is.
-                </p>
-                <p class="indentation">
-                    In this respect, Dr. Cornelius Van Til has given us a splendid example. As
-                    you may know, he expressed very strong objections to the theology of Karl Barth. This
-                    was so strong that Barth claimed that Van Til simply did not understand him. It has
-                    been my privilege to be at Dr. Van Til’s office and to see with my own eyes the bulky
-                    tomes of Barth’s Kirchliche Dogmatik (incidentally, these volumes were the original
-                    German text, not an English translation). As I leafed through them I did not see one
-                    page that was not constellated with underlining, double-underlining, marginal
-                    annotations, exclamation points, and question marks galore. So here is someone who
-                    certainly did not say, “I know Karl Barth well; I understand his stance; I don’t need
-                    to read any more of this; I can move on with what I have.” Each of the volumes,
-                    including the most recent, gave evidence of very, very careful scrutiny. So when we
-                    take issue with somebody, we need to do the job that is necessary to know that person
-                    so that we are not voicing our criticism in the absence of knowledge but that we are
-                    proceeding from the vantage point of real acquaintance.
-                </p>
-                <p class="indentation">
-                    Even that is not enough, however. Beyond what a person says or writes, <i>
-                        we must
-                        attempt to understand what a person means
-                    </i>. Now it is true that there are what
-                    are called “Freudian slips”. That is, there are people who do not express themselves
-                    exactly in the way it should be done and in the process somehow they give an insight
-                    into a tendency that is in them all along and which leads them to express themselves in
-                    an infelicitous but revealing manner. So it is appropriate, I suppose, to note this as
-                    a personal footnote, so to speak, in order possibly to make use of it at some time in
-                    the discussion. But if somebody fails to express himself or herself accurately, there
-                    is no great point in pressing the very language that is used. We ought to try to
-                    understand what is the meaning that this language is intended to convey.In some cases,
-                    we may provide an opportunity for an opponent to speak more accurately.
-                </p>
-                <p class="indentation">
-                    I have experienced this in my own home. I have noticed that my wife sometimes says
-                    things like, “You never empty the wastebasket.” Now as a matter of fact, on January 12,
-                    1994, I did empty the wastebasket. Therefore, the word never is inappropriate! This
-                    tends to weaken the force of my wife’s reproach. Well, I’ve learned that I don’t get
-                    anywhere by pressing this point. This kind of response does not provide dividends of
-                    joy and peace in my home. I’ve learned, therefore, to interpret that when my wife says
-                    “never” she often means “rarely” or “not as often as should be”. When she says
-                    “always,” she means “frequently” or “more often than should be”.
-                </p>
-                <p class="indentation">
-                    Instead of quibbling as to the words never and always, I would do well to pay attention
-                    to what she finds objectionable. And indeed, I should be emptying the wastebasket.
-                    Feminist or not feminist, a husband and father should empty the wastebasket; and
-                    therefore, if I fail to do this, even only once, there is a good reason to complain.
-                    Nothing is gained by quibbling about how often this happens. I ought to recognize this
-                    and be more diligent with it rather than to quote the dictionary.
-                </p>
-                <p class="indentation">
-                    Similarly, in dealing with those who differ, we ought not to split hairs
-                    about language just in order to pounce on our opponent because he or she has not used
-                    accurate wording. It is more effective to seek to apprehend what is meant and then to
-                    relate ourselves to the person’s meaning. If we don’t do that, of course, there is no
-                    encounter because this person speaks at one level and we are taking the language at
-                    another level. The two do not meet and the result is bound to be frustrating. If we
-                    really want to meet, we might as well try to figure out the meaning rather than to
-                    quibble on wording.
-                </p>
-                <p class="indentation">
-                    Moreover, I would suggest that we owe to people who differ from us
-                    to seek to understand their aims. What is it that they are looking for? What is it that
-                    makes them tick? What is it that they are recoiling against? What are the experiences,
-                    perhaps tragic experiences, that have steeled them into a particular stance? What are
-                    the things that they fear and the things that they yearn for? Is there not something
-                    that I fear as well or yearn for in the same way? Is there not a possibility here to
-                    find a point of contact at the very start rather than to move on with an entirely
-                    defensive or hostile mood?
-                </p>
-                <p class="indentation">
-                    As an example it may be observed that in the fourth century
-                    the heretic <a href="https://en.wikipedia.org/wiki/Arius" target="blank">Arius</a>,
-                    and undoubtedly many of his supporters, were especially leery of modalism, a serious
-                    error in the conception of the Trinity which claims that the Godhead manifested Himself
-                    in three successive forms or modes as Father, Son and the Holy Spirit rather than to
-                    exist eternally as Three Who have inter-personal relations with each other. From Arius’
-                    vantage point, the orthodox doctrine of the full deity of the Son and the Holy Spirit
-                    did of necessity imply a modalistic view. It did not help that one of his very vocal
-                    opponents, Marcellus of Ancyra, did, in fact, border dangerously on modalism.
-                </p>
-                <p class="indentation">
-                    Arguments designed to show the biblical and logical strengths
-                    of the doctrine of the Son’s full deity or vice versa the weakness of Arius’s
-                    subordinationism would not be likely to be effective unless the instinctive fear of an
-                    implied modalism were addressed and shown to be without solid foundation. With all due
-                    respect to the soundness, courage, and perseverance of those like Athanasius and Hilary
-                    who consistently resisted Arianism, one may yet wonder if a more effective method of
-                    dealing with this error might not have been to allay the fear that orthodoxy inevitably
-                    would lead to modalism.
-                </p>
-                <p class="indentation">
-                    In the controversy between <a href="https://en.wikipedia.org/wiki/Calvinism"
-                                                  target="blank">
-                        Calvinism
-                    </a> and <a href="https://en.wikipedia.org/wiki/Arminianism"
-                                target="blank"></a>Arminianism,
-                    it must be understood that many Arminians (possibly almost all of them) believed that
-                    to affirm the complete sovereignty of God inevitably implies a rejection of any free
-                    will, power of decision, and even responsibility on the part of created rational
-                    beings, angelic or human. Their attachment to those features naturally leads them to
-                    oppose Calvinism as they understand it. It is imperative for the Calvinist
-                    controversialist to affirm and to prove that he does not, in fact, deny or reject these
-                    modalities of the actions and decisions of moral agents but that he or she undertakes
-                    to retain these—even though their logical relation to divine sovereignty remains
-                    shrouded in a mystery that transcends finite, human logic.
-                </p>
-                <p class="indentation">
-                    Similarly, the Calvinist should not glibly conclude
-                    that evangelical Arminians are abandoning the notion of divine sovereignty because they
-                    assert the freedom of the human will. It is plainly obvious that Arminians pray for the
-                    conversion of those yet unconverted and that they desire to recognize the Lordship of
-                    God. The Arminian will do well to emphasize this in discussion with Calvinists so as to
-                    provide a clearer perception of the actual stance of both parties. It is remarkable
-                    that committed Calvinists can sing without reservation many of the hymns of Charles and
-                    John Wesley, and vice versa that most Arminians do not feel they need to object to
-                    those of Isaac Watts, Augustus Toplady, or John Newton.
-                </p>
-                <p class="indentation">
-                    In summary, I would say we owe it to our opponents to deal with them in such a way that
-                    they may sense that we have a real interest in them as persons, that we are not simply
-                    trying to win an argument or show how smart we are, but that we are deeply interested
-                    in them—and are eager to learn from them as well as to help them.
-                </p>
-                <p class="indentation">
-                    One method that I have found helpful in making sure that I have dealt fairly with a
-                    position that I could not espouse was to assume that a person endorsing that view was
-                    present in my audience (or was reading what I had written). Then my aim is to represent
-                    the view faithfully and fully without mingling the criticism with factual statements.
-                    In fact, I try to represent them so faithfully and fully that an adherent to that
-                    position might comment, “This man certainly does understand our view!” It would be a
-                    special boon if one could say, “I never heard it stated better!” Thus I have earned the
-                    right to criticize. But before I proceed to do this, it is only proper that I should
-                    have demonstrated that I have a correct understanding of the position I desire to
-                    contest.
-                </p>
-                <hr>
-                <p id="two" class="scrollspy">
-                    <h6><b>(2)What Can I Learn from Those Who Differ From Me?</b></h6>
-                </p>
-                <p class="indentation">
-                    To raise the question, “What do I owe the person who differs from me?”
-                    is very important, for otherwise any discussion is doomed to remain unproductive. The
-                    truth that I believe I have grasped must be presented in a spirit of love and
-                    winsomeness. To do otherwise is to do detriment to truth itself, for it is more
-                    naturally allied to love than to hostility ( <a href="https://www.biblegateway.com/passage/?search=Ephesians+4.15&version=KJV"
-                                                                    target="blank"> Ephesians 4:15 </a>). Belligerence or sarcasm may, in fact, reflect
-                    a certain insecurity that is not warranted when one is really under the sway of truth.
-                    It may well be that God’s servant may be moved to righteous indignation in the presence
-                    of those “who suppress the truth by their wickedness” (<a href="https://www.biblegateway.com/passage/?search=Romans+1.18&version=KJV"
-                                                                              target="blank">Romans 1:18</a>). This explains the outbursts of the Old
-                    Testament prophets, of our Lord in His denunciation of the Pharisees, and of the
-                    apostles in dealing with various heresies and hypocrisies in the early church.
-                </p>
-                <p class="indentation">
-                    These severe judgments were ordinarily aimed at warning members of the flock rather
-                    than winning over some people who had distanced themselves from the truth of God to a
-                    point which left no room for the hope of recovery
-                    (<a href="https://www.biblegateway.com/passage/?search=Psalm+139.19-22&version=KJV"
-                        target="blank">Psalm 139:19-22</a>;
-                    <a href="https://www.biblegateway.com/passage/?search=Isaiah+5.8-25&version=KJV"
-                       target="blank">
-                        Isaiah
-                        5:8-25
-                    </a>;
-                    <a href="https://www.biblegateway.com/passage/?search=Daniel+5.26-30&version=KJV"
-                       target="blank">Daniel 5:26-30</a>;
-                    <a href="https://www.biblegateway.com/passage/?search=Matthew+12.30-32&version=KJV"
-                       target="blank">
-                        Matthew
-                        12:30-32
-                    </a>;
-                    <a href="https://www.biblegateway.com/passage/?search=Acts+7.51-53&version=KJV"
-                       target="blank">
-                        Acts
-                        7:51-53
-                    </a>; <a href="https://www.biblegateway.com/passage/?search=Galatians+5.12&version=KJV"
-                             target="blank">Galatians 5:12</a>;
-                    <a href="https://www.biblegateway.com/passage/?search=Revelation+22.15&version=KJV"
-                       target="blank"> Revelation 22:15</a>).
-                    But when dealing with those we have a desire to influence for the good, we need
-                    imperatively to remain outgoing and gracious.
-                </p>
-                <p class="indentation">
-                    When we are sure that our outward approach is proper, we need secondly to
-                    safeguard the inward benefits of courtesy. We need to ask the question, ‘What can I
-                    learn from those who differ from me?” It is not censurable selfishness to seek to gain
-                    maximum benefits from any situation that we encounter. It is truly a pity if we fail to
-                    take advantage of opportunities to learn and develop that almost any controversy
-                    affords us.
-                </p>
-                <p class="indentation">
-                    <h6><i>Could I be Wrong?</i></h6>
-                </p>
-                <p class="indentation">
-                    The first thing that I should be prepared to learn is that I may be
-                    wrong and the other person may be right. Obviously, this does not apply to certain
-                    basic truths of the faith like the Deity of Christ or salvation by grace. The whole
-                    structure of the Christian faith is at stake here, and it would be instability rather
-                    than broad-mindedness to allow these to be eroded by doubts.Yet, apart from issues
-                    where God Himself has spoken so that doubt and hesitancy are really not permissible,
-                    there are numerous areas where we are temperamentally inclined to be very assertive and
-                    in which we can quite possibly be in error.
-                </p>
-                <p class="indentation">
-                    When we are unwilling to acknowledge our
-                    fallibility, we reveal that we are more interested in winning a discussion and
-                    safeguarding our reputation than in the discovery and triumph of truth.
-                    A person who corrects our misapprehensions is truly our helper rather than our
-                    adversary, and we should be grateful for this service rather than resentful of the
-                    correction. As far as our reputation is concerned, we should seek to be known for an
-                    unfailing attachment to the truth and not appear to pretend to a kind of infallibility
-                    that we are ready to criticize when Roman Catholics claim it for their popes!
-                </p>
-                <p class="indentation">
-                    Our reputation will be better served if we show ourselves ready to be corrected when in
-                    error, rather than if we keep obstinately to our viewpoint when the evidence shows it
-                    to be wrong. I should welcome correction. It renders a signal service to me! I should
-                    respond, “I was mistaken in this; I am glad that you straightened me out; thank you for
-                    your help.” People who are unwilling to acknowledge their mistakes, by contrast, may be
-                    called stubborn and lose their credibility.
-                </p>
-                <p class="indentation">
-                    <h6><i>What are the Dangers?</i></h6>
-                </p>
-                <p class="indentation">
-                    In the second place we may learn from one who differs that our presentation, while
-                    correct as far as it goes, fails to embody the truth in its entirety on the subject in
-                    view. Although what we assert is true, there are elements of truth that, in our own
-                    clumsy way, we have overlooked. For instance, we may be so concerned to assert the
-                    deity of Christ that we may appear to leave no room for His humanity. As a Calvinist, I
-                    may so stress the sovereignty of God that the reality of human decision may appear to
-                    be ruled out. Here again, I should feel grateful rather than resentful. The adversative
-                    situation may well force me to give better attention to the fullness of revelation and
-                    preclude an innate one-sidedness which results in a caricature that does disservice to
-                    truth no less than an actual error may do.
-                </p>
-                <p class="indentation">
-                    Many of the mainline elements of Christianity are thus,
-                    “two-railed,” if I may express myself in a metaphor. Unity, yet threeness in God,
-                    immanence yet transcendence, sovereignty of God and yet reality of rational decision,
-                    body and soul, deity and humanity of the Mediator, justification and sanctification,
-                    divine inspiration of Scripture and human authorship, individual and corporate
-                    responsibility. One could multiply the examples. When one of the factors is overlooked,
-                    one is doing no better than the railroad operator who would attempt to run an ordinary
-                    train with only one rail (I do not speak here of monorails!). The person who differs
-                    from me may render me great service by compelling me to present the truth in its
-                    completeness and thus avoid pitfalls created by under-emphasis, over-emphasis and
-                    omissions. Thus my account will be “full-orbed” rather than “half-baked!”
-                </p>
-                <p class="indentation"><h6><i>What are the Dangers?</i></h6></p>
-                <p class="indentation">
-                    I may learn from those who differ from me that I have not sufficiently perceived
-                    certain dangers to which my view is exposed and against which I need to be especially
-                    on guard. I may find out notably that there are certain weighty objections to which I
-                    had not given sufficient attention heretofore. Here again, I must be grateful for a
-                    signal service rendered by the objector. Instead of being irked by the opposition, I
-                    should rise to the challenge of presenting my view with appropriate safeguards and in
-                    such a way as to anticipate objections that are likely to arise. For example, consider
-                    how the Westminster divines were led to express the doctrine of divine decrees
-                    (Confession 3, 1).
-                </p>
-                <p class=" center">
-                    <small>
-                        God from all eternity did, by the most wise and Holy counsel of His own
-                        will, freely and unchangeably ordain whatsoever comes to pass; yet so as thereby
-                        neither is God the author of sin, nor is violence offered to the will of the
-                        creatures, nor is the liberty or contingency of second causes taken away, but
-                        rather established.
-                    </small>
-                </p>
-                <p class="indentation">
-                    The three clauses following ‘yet so as thereby” are specifically designed to ward off
-                    misunderstanding and to meet objections commonly raised by Arminians or Arminianizing
-                    divines. The peculiar wisdom of setting up these safeguards in the first
-                    article of that chapter is the fruit of the bitter experiences made in more than half a
-                    century of controversy issuing in rich, balanced and nuanced expression of truth in the
-                    Westminster standards.
-                </p>
-                <p class="indentation">
-                    In France, certain barriers placed on bridges, terraces
-                    or quays are called “garde-fous”, that is to say “safeguards for the crazy.” They
-                    provide a fence to prevent those who are careless from failing off the edge. Those who
-                    disagree with us provide us with an opportunity to ascertain areas of danger in our
-                    view and to build “garde-fous” there. It would be a pity if we failed to take advantage
-                    of such an opportunity.
-                </p>
-                <p class="indentation"><h6><i>What about Ambiguities?</i></h6></p>
-                <p class="indentation">
-                    We may learn from those who object that we are not communicating as we should and that
-                    they have not rightly understood what we wanted to say. In this we can be benefited
-                    also, for the whole purpose of speaking (or writing) is to communicate. If we don’t
-                    communicate, we might as well remain silent. And if we don’t manage to communicate
-                    properly what we think, we have to learn to speak better. If ambiguities remain, and it
-                    is apparent from the way in which the other person reacts that ambiguities do remain,
-                    then we are challenged to make a presentation that is clearer, more complete, more
-                    wholesome, and one that will communicate better.
-                </p>
-                <p class="indentation">
-                    We have biblical precedent for this. The apostle Paul, for instance, anticipated
-                    objections which arise from misunderstanding of his doctrine. In Romans 6:1 he writes
-                    <i>
-                        “What shall we say then? Shall we go on sinning so that grace may increase? By no
-                        means!”.
-                    </i> This objection provides a launching pad to articulate more fully his
-                    thoughts so that readers will not be permitted to wander away, but will gain a proper
-                    understanding of the truth.There are many other examples of this approach in the
-                    Pauline writings
-                    (<a href="https://www.biblegateway.com/passage/?search=Romans+3.3&version=KJV"
-                        target="blank">
-                        Romans
-                        3:3
-                    </a>;
-                    <a href="https://www.biblegateway.com/passage/?search=Romans+6.15&version=KJV"
-                       target="blank">6:15</a>,
-                    <a href="https://www.biblegateway.com/passage/?search=Romans+6.19&version=KJV"
-                       target="blank">19</a>;
-                    <a href="https://www.biblegateway.com/passage/?search=Romans+7.7&version=KJV"
-                       target="blank">7:7</a>,
-                    <a href="https://www.biblegateway.com/passage/?search=Romans+7.13&version=KJV"
-                       target="blank">13</a>;
-                    <a href="https://www.biblegateway.com/passage/?search=Galatians+2.17&version=KJV"
-                       target="blank"> Galatians 2:17</a>,
-                    <a href="https://www.biblegateway.com/passage/?search=Galatians+2.19&version=KJV"
-                       target="blank">19</a> etc.). Even our Lord took
-                    pains to rephrase or amplify some of His statements that the hearer had not rightly
-                    understood at first ( <a href="https://www.biblegateway.com/passage/?search=Matthew+13.18-23&version=KJV"
-                                             target="blank">Matthew 13:18-23</a>,
-                    <a href="https://www.biblegateway.com/passage/?search=Matthew+13.37-43&version=KJV"
-                       target="blank"> 37-43</a>;
-                    <a href="https://www.biblegateway.com/passage/?search=John+11.12-14&version=KJV"
-                       target="blank"></a>John
-                    11:12-14, etc.).
-                </p>
-                <p class="indentation">
-                    The effort made to clarify our thought for others will often result in clarifying it
-                    also for ourselves. We may thus secure a firmer hold upon the truth, a better grasp of
-                    its implications, and relationship to other truths, a more effective way to articulate
-                    and illustrate it. These are boons for which we may be grateful to those who differ
-                    from us.
-                </p>
-                <p class="indentation">
-                    When we give due attention to what we owe those who differ and what we can learn from
-                    them, we may be less inclined to proceed in a hostile manner. Our hand will not so
-                    readily contract into a boxing fist, but will be extended as an instrument of
-                    friendship and help; our feet will not be used to bludgeon another, but will bring us
-                    closer to those who stand afar; our tongue will not lash out in bitterness and sarcasm,
-                    but will speak words of wisdom, grace and healing (
-                    <a href="https://www.biblegateway.com/passage/?search=Proverbs+10.20&version=KJV"
-                       target="blank">Proverbs 10:20</a>,
-                    <a href="https://www.biblegateway.com/passage/?search=Proverbs+10.21&version=KJV"
-                       target="blank"> 21</a>;
-                    <a href="https://www.biblegateway.com/passage/?search=Proverbs+13.14&version=KJV"
-                       target="blank"> 13:14</a>;
-                    <a href="https://www.biblegateway.com/passage/?search=Proverbs+15.1&version=KJV"
-                       target="blank">
-                        15:1
-                    </a>;
-                    <a href="https://www.biblegateway.com/passage/?search=Proverbs+24.26&version=KJV"
-                       target="blank"> 24:26</a>;
-                    <a href="https://www.biblegateway.com/passage/?search=Proverbs+25.11&version=KJV"
-                       target="blank"> 25:11</a>;
-                    <a href="https://www.biblegateway.com/passage/?search=James+3&version=KJV"
-                       target="blank">
-                        James
-                        3
-                    </a>).
-                </p>
-                <hr>
-                <p id="three" class="scrollspy"><h6><b>(3) How Can I Cope with Those Who Differ from Me?</b></h6></p>
-                <p class="indentation">
-                    In the previous two sections, we sought to explore how to derive the maximum benefit
-                    from controversy both as to those who differ by being sure that we do not fail in our
-                    duty toward them, and as to ourselves in welcoming an opportunity to learn as well as
-                    an occasion to vindicate our position. Now after having given due attention to the
-                    questions, “What do I owe?” and “What can I learn?”, it is certainly proper to raise
-                    the query, <i>“How can I cope with those who differ from me?”</i>
-                </p>
-                <p class="indentation">
-                    Now “coping” involves naturally two aspects known as “defensive” and
-                    “offensive.” Unfortunately, these terms are borrowed from the military
-                    vocabulary and tend to reflect a pugnacious attitude which injects bitterness into
-                    controversies. We should make a conscious effort to resist that trend. Furthermore
-                    “offensive” is often understood as meaning “giving offense” or “repulsive” rather than
-                    simply “passing to the attack.” It may therefore be better to use the adjectives
-                    “protective” and “constructive” to characterize these two approaches.
-                </p>
-                <p class="indentation"><h6><i>Biblical Arguments</i></h6></p>
-                <p class="indentation">
-                    In evangelical circles biblical arguments carry maximum weight if properly handled, for
-                    they invoke the authority of God Himself in support of a position. This is what Luther
-                    so eloquently asserted at the Diet of Worms, and what the Westminster Confession
-                    also bears witness to in these words:
-                </p>
-                <p class=" center">
-                    <small>
-                        God alone is Lord of the conscience, and hath left it free from the doctrines and
-                        commandments of men which are in any way contrary to His Word, or beside it in
-                        matters of faith or worship (WCF 20, 2).
-                    </small>
-                </p>
-                <p class="indentation">
-                    We need here to be careful to make a reverent use of Scripture, quoting every reference
-                    in a way that is consistent with its context. This will protect our approach against
-                    the legitimate criticisms levied against “prooftexting,” a method that lifts scriptural
-                    statements from their environment, and marshals them as if they were isolated
-                    pronouncements vested with divine authority without regard to the way in which they are
-                    introduced in Holy Writ. A notable example of this wrong approach would be to claim
-                    that God sanctions the statement, “There is no God” because it is found in
-                    <a href="https://www.biblegateway.com/passage/?search=Psalm+14.1&version=KJV"
-                       target="blank">
-                        Psalm 14:1
-                    </a>
-                    and <a href="https://www.biblegateway.com/passage/?search=Psalm+53.1&version=KJV"
-                           target="blank">53:1</a>.
-                </p>
-                <p class="indentation">
-                    We must therefore be careful to use the Scripture in such a way that an
-                    examination of the context will strengthen, not weaken, the argument. Very few things
-                    are as damaging to a position as a claim to be grounded in the authority of God’s Word,
-                    only to find that a more careful examination of the text in its context cancels out the
-                    support it was presumed to give. An argument of this type, like the house built on
-                    sand, “falls with a great crash” ( <a href="https://www.biblegateway.com/passage/?search=Matthew+7.27&version=KJV"
-                                                          target="blank">Matthew 7:27 </a>).
-                </p>
-                <p class="indentation">
-                    Likewise, a well-advised person will be careful to avoid passages that
-                    “boomerang”—passages that are used as proof, but turn out to be more decisive against
-                    the view advanced. For example, some people quote
-                    <a href="https://www.biblegateway.com/passage/?search=Philippians2.12&version=KJV"
-                       target="blank"> Philippians 2:12</a>, “Work out your own salvation with fear and
-                    trembling” and forget that Paul continues, “For it is God who works in you to will and
-                    to act ....”
-                </p>
-                <p class="indentation">
-                    All this demands that we should know the Word of God. God entrusted the sacred
-                    Scriptures to His people in order that they may search it diligently (
-                    <a href="https://www.biblegateway.com/passage/?search=John+5.39&version=KJV"
-                       target="blank">
-                        John
-                        5:39
-                    </a>) and make it the object of their daily meditation (
-                    <a href="https://www.biblegateway.com/passage/?search=Psalm+119&version=KJV"
-                       target="blank">
-                        Psalm 119
-                    </a>). To be acquainted with the whole counsel of God (
-                    <a href="https://www.biblegateway.com/passage/?search=Acts+20.27&version=KJV"
-                       target="blank">
-                        Acts 20:27
-                    </a>) must be the aim not only of “professionals” like pastors and
-                    professors, but of everyone who wants to be known as a Christian. To be sound in the
-                    interpretation, correlation and application of the Scriptures is the way “to be
-                    approved, a workman who does not need to be ashamed” (
-                    <a href="https://www.biblegateway.com/passage/?search=2Timothy+2.15&version=KJV"
-                       target="blank">
-                        2 Timothy 2:15
-                    </a>), and every child of God ought to aspire to that.
-                </p>
-                <p class="indentation">
-                    Protectively we may be aware of passages that are often quoted to invalidate a
-                    stance which we find scriptural. Sometimes we may anticipate this objection
-                    even before it is raised and be prepared to show how it does not undercut our view.
-                    If we have a particularly strong refutation, we may at times wait until the person who
-                    differs quotes the passage. In this way we may score the psychological advantage of
-                    destroying an argument thought valid. Even this however, must remain within the
-                    framework of “speaking the truth in love” (
-                    <a href="https://www.biblegateway.com/passage/?search=Ephesians+4.15&version=KJV"
-                       target="blank">Ephesians 4:15</a>).
-                </p>
-                <p class="indentation">
-                    In some cases it may be possible to show that the interpretation which would see in a
-                    particular passage an objection to the scriptural truth we are undertaking to advocate
-                    is simply improper and indefensible because it sets this Scripture in conflict with its
-                    context, or at least with the larger context of the unity of divine revelation. In
-                    other cases it may be sufficient to show that there are one or several plausible
-                    alternative explanations of this text that do not precipitate the alleged conflict.
-                    Since we are obliged to seek the unity of the truth, a plausible interpretation that
-                    averts a conflict may well deserve preference.
-                </p>
-                <p class="indentation">
-                    To sum up, we must ever strive to take account of the fullness of biblical revelation
-                    to have the boldness to advance as far as it leads, and the restraint to stop in our
-                    speculations where the Bible ceases to provide guidance. Polemic Theology in this
-                    respect is simply biblical light focused in such a way as to assist those who appear
-                    yet caught in some darkness.
-                </p>
-                <p class="indentation"><h6><i>General Arguments</i></h6></p>
-                <p class="indentation">
-                    These arguments direct their appeal to something other than the actual text of
-                    Scripture,
-                    namely to logic, history and tradition. While the authority involved is not on the same
-                    level as the Bible, the Word of God, it has a bearing on the discussions and must be
-                    considered by those who wish to make a strong case.
-                </p>
-                <p class="indentation"><h6><i>Appeal to Reason</i></h6></p>
-                <p class="indentation">
-                    Human reason, especially when not guided by divine revelation, is apt to go astray
-                    either in being unduly influenced by prejudice (what we call “rationalizing”) or when
-                    reason forgets its proper limits and attempts to apply to the infinite what is valid
-                    only for finite categories. Nevertheless, reason is a divine gift to humankind,
-                    indispensable to the process of receiving, ap-plying and communicating revelation (cf.
-                    J. I. Packer, “Fundamentalism” and the Word of God, pages 128-137). It is a part and
-                    parcel of God’s image in humanity. To fly in the face of logic is to court
-                    self-destruction, for logic has a way to beat its own path in the process of history.
-                    Rational arguments may therefore be presented with propriety, and those advanced by
-                    people who differ from us must be addressed.
-                </p>
-                <p class="indentation">
-                    Constructively, it behooves me to show that my view is in keeping with the
-                    totality of revealed truth, with the structure of the Christian faith as an
-                    organism of truth. I will promote the acceptance of an individual tenet if I can show
-                    that it is inescapably related to some other element of the faith on which I and the
-                    one who differs from me have agreement. For instance, one who accepts the doctrine of
-                    the Trinity is pretty well bound to confess the deity of Christ and vice versa.
-                </p>
-                <p class="indentation">
-                    Specifically, it is in order to make plain the damaging or even disastrous
-                    effects that a departure from the position I advocate will logically entail. In doing
-                    this, I must carefully distinguish between the view that the other person actually
-                    espouses and the implication that I perceive as resulting from it. Failure to make this
-                    distinction has resulted in the ineffectiveness of much Polemic Theology.
-                    Christians have wasted a huge amount of ammunition in bombarding areas where their
-                    adversaries were not in fact located, but where it was thought they were logically
-                    bound to end up.
-                </p>
-                <p class="indentation">
-                    To struggle with a caricature is not a “big deal.” And to knock down a straw man does
-                    not entitle one to the Distinguished Service Cross! To be sure, it is a part of the
-                    proper strategy to show those who differ that their view involves damaging implications
-                    that will be difficult to resist in the course of time, but one must remain aware that
-                    it is the present position rather than anticipated developments that must be dealt
-                    with.
-                </p>
-                <p class="indentation">
-                    Protectively, I need to face the objections that are raised against my view.
-                    Some of them are irrelevant because they are based on a misunderstanding of the issues.
-                    To deal with these will help me to clarify my position and to reassert it with proper
-                    safeguards against one-sidedness, exaggeration or misconceptions. For instance, I may
-                    show that definite atonement is not incompatible with a universal offer of salvation in
-                    Christ, even though the supporters of universal atonement frequently think it is. Other
-                    objections may be shown to be invalid because they apply to the view of those who
-                    differ as well as to mine. Still other objections may be recognized as
-                    peripheral, that is to say, difficulties that may or may not be resolved rather than
-                    considerations that invalidate a position otherwise established.
-                </p>
-                <p class="indentation">
-                    For instance, some alleged contradictions between two passages of Scripture represent a
-                    difficulty for the doctrine of inerrancy rather than a discreditation of this otherwise
-                    well-established tenet of the faith. Obviously the most advantageous situation is found
-                    when an objection can be turned around to become a positive argument in favor of the
-                    view objected to. Jesus’ treatment of the Old Testament Law in
-                    <a href="https://www.biblegateway.com/passage/?search=Matthew+5.21-42&version=KJV"
-                       target="blank"> Matthew 5:21-42 </a> is a case in point. It might appear to a
-                    superficial reader that in this text Jesus repudiates the authority of the Law, when in
-                    fact He confirms it and reinforces it by His spiritual interpretation.
-                </p>
-                <p class="indentation">
-                    Furthermore, it is sometimes effective to challenge a person who differs from us to
-                    articulate an alternative approach which we may then proceed to criticize. For
-                    instance, a person who denies the deity of Christ may well be pressed to give his or
-                    her answer to Jesus’ question, “Who do you say that I am?” (<a href="https://www.biblegateway.com/passage/?search=Matthew+16.15&version=KJV"
-                                                                                   target="blank"> Matthew 16:15</a>). Any answer short of full deity
-                    may be shown as deeply unsatisfactory, as leading to some form of polytheism or
-                    as falling utterly to account for the facts of the life, death and resurrection of
-                    Christ. It may be hoped that those who have unsatisfactory views may then leave the
-                    smoldering ruins of their system and take refuge in the solid edifice of the faith
-                    “once for all entrusted to the saints” (<a href="https://www.biblegateway.com/passage/?search=Jude+3&version=KJV"
-                                                               target="blank"> Jude 3</a>).
-                </p>
-                <p class="indentation"><h6><i>Appeal to History and Tradition</i></h6></p>
-                <p class="indentation">
-                    The course of history is a remarkable laboratory that permits us to observe the
-                    probable developments that issue from the holding of certain tenets. The decisions of
-                    councils or the pronouncements of confessions of faith are often geared to guard
-                    against erroneous opinions that God’s people recognized as dangerous or even fatal to
-                    the faith. To neglect this avenue of knowledge is to risk repeating some mistakes of
-                    the past that an acquaintance with history might well have enabled us to avoid. The
-                    Christological debates of the fourth and fifth centuries should protect us from the
-                    twin errors of Arianism and Apollinarianism, of Nestorianism and Monophysitism without
-                    our passing through the convulsions that the church of those days experienced. The
-                    Reformation of the sixteenth century, similarly, should shield us from repeating some
-                    of the mistakes of the Roman Catholic Church.
-
-                </p>
-                <p class="indentation">
-                    Constructively, it is proper for me to attempt to prove that I am in line with
-                    orthodoxy in general and specifically with statements of faith that have received wide
-                    acceptance or that are part of the subordinate standards of my church or of the church
-                    of the one who differs. This will be especially significant if the formulation was
-                    established for the purpose of warding off a position analogous to that of my opponent.
-                    Now all man-made statements are subject to revision and correction, but it appears
-                    prima facie impossible that a view that flatly contradicts the Nicene Creed or even the
-                    Westminster Standards should turn out to be right, while these revered creeds, tested
-                    as they were through centuries of Christian thinking, should be wrong.
-                </p>
-                <p class="indentation">
-                    Specifically, the position of the one who differs may so closely
-                    approximate a well-known heresy adjudged as heterodox that the course of history may
-                    provide a portrayal of what happens to those who entertain it. The disastrous course of
-                    Arianism, culminating as it did in the Moslem conquest of North Africa, may be an
-                    example. We need, however, to be careful to recognize the importance of weighing all
-                    operative factors rather than just some selected ones which seem to suit our purpose.
-                    The demise of Christianity in North Africa applied largely to Egypt where a monophysite
-                    tendency prevailed, as well as to the lands that had been conquered by the Vandals with
-                    their Arian commitment.
-                </p>
-                <p class="indentation">
-                    Those who would gloat over the increasing heterodoxy of the Arminian movement in the
-                    Netherlands should probably be somewhat sobered in thinking of the destiny of Calvinism
-                    in New England, which moved from high orthodoxy around 1650 to the rather massive
-                    Unitarian and Pelagian defection at the beginning of the nineteenth century. These
-                    remarks do not invalidate the value of the lessons of history, but merely admonish to
-                    caution in applying them.
-                </p>
-                <p class="indentation">
-                    Protectively, the course of action would parallel closely what was described above.
-                    Objections raised against our view may be shown to be counterproductive, because they
-                    support rather than undermine our view. They also may be judged irrelevant, because
-                    they fail to address our real position or because they burden equally the objector’s
-                    view. Or they may simply be inconsequential, because they have only a peripheral
-                    bearing on the issues.
-                </p>
-                <p class="indentation"><h6><i>Christian’s Goal</i></h6></p>
-                <p class="indentation">
-                    Perhaps the most important consideration for the Christian is to remain aware at all
-                    times of the goal to be achieved. It is the consistent perception of this goal that
-                    will give a basic orientation to the whole discussion: Are we attempting to win an
-                    argument in order to manifest our own superior knowledge and debating ability? Or are
-                    we seeking to win another person whom we perceive as enmeshed in error or inadequacy by
-                    exposing him or her to the truth and light that God has given to us?
-                </p>
-                <p class="indentation">
-                    If the former be true, it is not surprising if our efforts are vain: we should be like
-                    physicians who take care of patients simply in order to accredit some pet theory. If
-                    the latter be true, we will naturally be winsome. This will increase our patience when
-                    the force of our arguments does not seem to have an immediate effect. This will
-                    challenge us anew to understand those who differ in order to present the arguments that
-                    are most likely to be persuasive to them. God has appointed all of us to be witnesses
-                    to the truth. (
-                    <a href="https://www.biblegateway.com/passage/?search=John+1.7&version=KJV"
-                       target="blank">
-                        John 1:7
-                    </a>;
-                    <a href="https://www.biblegateway.com/passage/?search=Acts+1.8&version=KJV"
-                       target="blank">
-                        Acts
-                        1:8
-                    </a>) God is the one who can and will give efficacy to
-                    this witness. We should never underestimate His ability to deal even with those who
-                    appear most resistant. Who would have thought that Stephen could actually reach the
-                    heart and mind of anyone in the lynch mob that put him to death? But his great
-                    discourse was actually sowing goads in the very heart and conscience of Saul (
-                    <a href="https://www.biblegateway.com/passage/?search=Acts+26.14&version=KJV"
-                       target="blank">
-                        Acts
-                        26:14
-                    </a>). Acts 7 shows that his argument was sealed by his Christ-like spirit in
-                    the face
-                    of this atrocious murder (
-                    <a href="https://www.biblegateway.com/passage/?search=Acts+7.59-60&version=KJV"
-                       target="blank">
-                        Acts
-                        7:59-60
-                    </a>). His witness was used by God to win over
-                    perhaps the ablest of his adversaries, who was to be the great apostle Paul!
-                </p>
-                <p class="indentation">
-                    A Christian who carries on discussions with those who differ should not be subject to
-                    the psychology of the boxing ring where the contestants are bent upon demolishing one
-                    another. Rather “The Lord’s servant must not quarrel: instead, he must be kind to
-                    everyone, able to teach, not resentful. Those who oppose him he must gently instruct,
-                    in hope that God will grant them repentance leading them to a knowledge of the truth,
-                    and that they will come to their senses…” (
-                    <a href="https://www.biblegateway.com/passage/?search=2Timothy+2.24-26&version=KJV"
-                       target="blank">2 Timothy 2:24-26</a>).
-                </p>
-                <hr />
-                <small>
-                    Roger R. Nicole (December 10, 1915– December 11, 2010) was a native Swiss Reformed
-                    Baptist theologian and proponent of biblical inerrancy. He was an associate editor for
-                    the New Geneva Study Bible and was a founding member of both the International Council
-                    on Biblical Inerrancy and the Evangelical Theological Society, serving as president of
-                    the latter in 1956. Born to Swiss parents in Germany and raised in Switzerland, he
-                    earned his M.A. from Sorbonne, France, a B.D., S.T.M., and Th.D. from Gordon Divinity
-                    School, and a Ph.D. from Harvard University. Wheaton College awarded him a D.D. A
-                    bibliophile and distinguished librarian with a massive collection, the library of
-                    Reformed Theological Seminary in Orlando contains over twenty thousand of his books.
-                    They take up one half of the current library. Nicole wrote more than 100 articles and
-                    contributed to 50 books and reference works.
-                </small>
+                @Html.Raw(pub.PurchaseBtn)
+            </div>
+            <div id="error-message"></div>
+            <div class="col">
+                <h3>@Html.Raw(pub.Title)</h3>
+                <strong>@pub.Device</strong>
+                <small>By @pub.Author</small>
+                <br />
+                @Html.Raw(pub.DescriptionParagraph)
             </div>
         </div>
-    </div>
-    <hr />
-    <!--Holloween, A Result of Religious Apostasy-->
-    <div class="row">
-        <div class="col">
-            <img src="./assets/images/halloween.PNG" alt="portrait" class="img-fluid thumbnails">
-            <br>
-            <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-                    onclick="window.location.href='./assets/Halloween_A_Result_of_Religious_Apostasy.pdf'"
-                    formtarget="_blank">
-                Click to Read
-                <i class="material-icons right">picture_as_pdf</i>
-            </button>
-        </div>
-        <div class="col">
-            <h3 class="">Halloween, A Result of Religious Apostasy</h3>
-            <small>By Dr. John S. Waldrip (Author)</small>
-            <p></p>
-            <p class="indentation">
-                This time of year Baptist churches face the dilemma of a rapidly approaching Halloween season and
-                all of its attendant issues.
-                Those I serve as pastor have been thoroughly instructed over the years and buy into our ministry's
-                annual Christian Alternative to Halloween.
-                Perhaps you do something along that line, as well.
-                But what of those added to the church since last Halloween?
-                How do you address the issue for new families without rehashing the whole subject
-                all over again when most in the congregation already convinced of what's right?
-            </p>
-        </div>
-    </div>
-    <hr />
+        <hr />
+    }
 </section>
+<!-- 28 Truths -->
+<script>
+    (function () {
+        var stripe = Stripe('pk_live_uVdFif1mqEmv2Qh53qBTTjRC00qWWfmIvH');
+
+        var checkoutButton = document.getElementById('checkout-button-sku_FmzE9du2jC7IGE');
+        checkoutButton.addEventListener('click', function () {
+            /*
+             * When the customer clicks on the button, redirect
+             * them to Checkout.
+             */
+            stripe.redirectToCheckout({
+                lineItems: [{ price: 'sku_FmzE9du2jC7IGE', quantity: 1 }],
+                mode: 'payment',
+                /*
+                 * Do not rely on the redirect to the successUrl for fulfilling
+                 * purchases, customers may not always reach the success_url after
+                 * a successful payment.
+                 * Instead use one of the strategies described in
+                 * https://stripe.com/docs/payments/checkout/fulfill-orders
+                 */
+                successUrl: 'https://classicalbaptist.press',
+                cancelUrl: 'https://classicalbaptist.press/publication.html',
+            })
+                .then(function (result) {
+                    if (result.error) {
+                        /*
+                         * If `redirectToCheckout` fails due to a browser or network
+                         * error, display the localized error message to your customer.
+                         */
+                        var displayError = document.getElementById('error-message');
+                        displayError.textContent = result.error.message;
+                    }
+                });
+        });
+    })();
+</script>
+<!--LeaderGuide-->
+<script>
+    (function () {
+        var stripe = Stripe('pk_live_uVdFif1mqEmv2Qh53qBTTjRC00qWWfmIvH');
+
+        var checkoutButton = document.getElementById('checkout-button-sku_G96NoRLr9JV2zC');
+        checkoutButton.addEventListener('click', function () {
+            // When the customer clicks on the button, redirect
+            // them to Checkout.
+            stripe.redirectToCheckout({
+                items: [{ sku: 'sku_G96NoRLr9JV2zC', quantity: 1 }],
+
+                // Do not rely on the redirect to the successUrl for fulfilling
+                // purchases, customers may not always reach the success_url after
+                // a successful payment.
+                // Instead use one of the strategies described in
+                // https://stripe.com/docs/payments/checkout/fulfillment
+                successUrl: 'https://classicalbaptist.press',
+                cancelUrl: 'https://classicalbaptist.press/publication.html',
+            })
+                .then(function (result) {
+                    if (result.error) {
+                        // If `redirectToCheckout` fails due to a browser or network
+                        // error, display the localized error message to your customer.
+                        var displayError = document.getElementById('error-message');
+                        displayError.textContent = result.error.message;
+                    }
+                });
+        });
+    })();
+</script>
+<!--Learners aderGuide-->
+<script>
+    (function () {
+        var stripe = Stripe('pk_live_uVdFif1mqEmv2Qh53qBTTjRC00qWWfmIvH');
+
+        var checkoutButton = document.getElementById('checkout-button-sku_G96fzawHrMNbcC');
+        checkoutButton.addEventListener('click', function () {
+            // When the customer clicks on the button, redirect
+            // them to Checkout.
+            stripe.redirectToCheckout({
+                items: [{ sku: 'sku_G96fzawHrMNbcC', quantity: 1 }],
+
+                // Do not rely on the redirect to the successUrl for fulfilling
+                // purchases, customers may not always reach the success_url after
+                // a successful payment.
+                // Instead use one of the strategies described in
+                // https://stripe.com/docs/payments/checkout/fulfillment
+                successUrl: 'https://classicalbaptist.press',
+                cancelUrl: 'https://classicalbaptist.press/publication.html',
+            })
+                .then(function (result) {
+                    if (result.error) {
+                        // If `redirectToCheckout` fails due to a browser or network
+                        // error, display the localized error message to your customer.
+                        var displayError = document.getElementById('error-message');
+                        displayError.textContent = result.error.message;
+                    }
+                });
+        });
+    })();
+</script>
