@@ -4,19 +4,13 @@
     ViewData["Title"] = "Classical Baptist Press - Media";
     ViewData["ParallaxImgPath"] = "../images/media.jpg";
     var mediaFilesInfo = Media.GetMediaFilesInfo();
-
 }
 <!-- Container element -->
 <div class="parallax"></div>
-<br />
-<!--Main Body-->
-<br />
-<br />
-
 <section class="container" id="wrap">
     <div class="row">
         <div class="col">
-            <h3 class="secTitle center" id="header">Media</h3>
+            <h3 class="Section-Title center" id="header">Media</h3>
             <hr>
             <br>
         </div>
@@ -28,9 +22,9 @@
                 @Html.Raw(mfile.EmbeddedHTMLMediaFile)
             </div>
             <div class="col">
-                <h3 class="blue-grey-text text-darken-3"> @mfile.Title. </h3>
-                <h5>By @mfile.Author</h5>
-                <p class="card-panel">
+                <h3 class="blue-grey-text text-darken-3 Title-Card"> @mfile.Title. </h3>
+                <h5 class="Title-Card">By @mfile.Author</h5>
+                <p class="card-panel Body-Card">
                     @Html.Raw(mfile.DescriptionParagraph)
                 </p>
             </div>

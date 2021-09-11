@@ -35,9 +35,27 @@ audio {
     background-color: #343a40;
 }
 
-.secTitle {
+.Section-Title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    letter-spacing: 4px;
+    font-size: 2rem;
     text-transform: uppercase;
-    font-family: 'Cardo', serif;
+}
+
+.Title-Card,.Headers{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Body-Card{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Publication-Button {
+    background-color: #6772E5;
+    color: #FFF;
+    padding: 8px 12px;
+    margin: 4px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1em
 }
