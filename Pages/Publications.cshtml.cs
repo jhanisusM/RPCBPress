@@ -2,13 +2,20 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+
 
 namespace RPClassicalBaptistPress.Pages
 {
     public class PublicationsModel : PageModel
     {
+        private readonly IWebHostEnvironment _hostingEnvironment ;
+        public PublicationsModel(IWebHostEnvironment env)
+        {
+            _hostingEnvironment = env;
+        }
         public class Publications
         {
             public string PurchaseBtn { get; set; }
@@ -18,10 +25,11 @@ namespace RPClassicalBaptistPress.Pages
             public string Author { get; set; }
             public string EmbeddedHTMLPublicationImg { get; set; }
         }
-        
-        public static List<Publications> GetPublicationInfo()
+        public List<Publications> GetPublicationInfo()
         {
-            string PolemicTheology = System.IO.File.ReadAllText(@"C:\Users\User\source\repos\RPCBPress\Pages\PolemicTheology.txt");
+            string filePath = System.IO.Path.Combine(_hostingEnvironment.WebRootPath, "files/PolemicTheology.txt");
+            string PolemicTheology = System.IO.File.ReadAllText(filePath);
+
             List<Publications> output = new List<Publications>
             {
                 // 28 Truths
@@ -57,7 +65,7 @@ namespace RPClassicalBaptistPress.Pages
                 //Suffer The Children
                 new Publications
                 {
-                    PurchaseBtn = "<a class='Publication-Button' href='https://www.amazon.com/Suffer-Children-tragic-legacies-Bushnell-ebook/dp/B072FHM89F' target='blank'> Click to Purchase</a>",
+                    PurchaseBtn = "<br/><a class='Publication-Button' href='https://www.amazon.com/Suffer-Children-tragic-legacies-Bushnell-ebook/dp/B072FHM89F' target='blank'> Click to Purchase</a>",
                     Device = "Kindle Edition",
                     Title = "Suffer The Children: (The tragic legacies of Finney & Bushnell)",
                     DescriptionParagraph = "<p class=' '> No one lives in isolation. Everyone functions in an environment that is formed by what has occurred in the past. Have you considered how very differently child evangelism differs from past eras? Are you aware of the influence of men now forgotten on how the Gospel is presented to children? In this book you will be introduced to the influences of two men you likely have never heard of before. Just as importantly, it is likely that one or both of these influential men is unknown to your pastor. This book begins to set the record straight so parents and pastors will not inadvertently be more barriers than escorts of children coming to the Savior.</p>",
@@ -87,7 +95,7 @@ namespace RPClassicalBaptistPress.Pages
                 //Halloween, A Result of Religious Apostasy
                 new Publications
                 {
-                    PurchaseBtn = "<a class='Publication-Button'href='./assets/Halloween_A_Result_of_Religious_Apostasy.pdf' target='blank'> Click to Read </a>",
+                    PurchaseBtn = "<br/><a class='Publication-Button'href='./assets/Halloween_A_Result_of_Religious_Apostasy.pdf' target='blank'> Click to Read </a>",
                     Device = "Online",
                     Title = "Halloween, A Result of Religious Apostasy",
                     DescriptionParagraph = "<p class=' '> This time of year Baptist churches face the dilemma of a rapidly approaching Halloween season and all of its attendant issues. Those I serve as pastor have been thoroughly instructed over the years and buy into our ministry's annual Christian Alternative to Halloween. Perhaps you do something along that line, as well. But what of those added to the church since last Halloween? How do you address the issue for new families without rehashing the whole subject all over again when most in the congregation already convinced of what's right? </ p >",

@@ -1,9 +1,10 @@
 ﻿@page
 @model RPClassicalBaptistPress.Pages.PublicationsModel
+@inject PublicationsModel pubMod
 @{
     ViewData["Title"] = "Publications || Classical Baptist Press";
     ViewData["ParallaxImgPath"] = "../images/press.jpg";
-    var publicationsInfo = PublicationsModel.GetPublicationInfo();
+    var publicationsInfo = pubMod.GetPublicationInfo();
 }
 
 <script type="text/javascript" src="https://js.stripe.com/v3"></script>
