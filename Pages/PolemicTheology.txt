@@ -1,4 +1,4 @@
-﻿<div class='indentation'>
+﻿<div class=' '>
     Who does not encounter from time to time people who are not in complete agreement?
     Whether it is between husbands and wives, parents and children, co-workers on the job
     or fellow members in the church, it is impossible to live without disagreement.
@@ -11,7 +11,7 @@
 </a>
 <div class='collapse' id='collapseExample'>
     <br />
-    <p class='indentation'>
+    <p class=' '>
         It seems strange that one should desire to speak at all about Polemic Theology since we
         are now in an age when folks are more interested in ecumenism and irenics than in
         polemics. Furthermore, Polemic Theology appears to have been often rather ineffective.
@@ -20,7 +20,7 @@
         Scripture; and in the end, they have not convinced very many people—sometimes not even
         themselves!
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Under these circumstances one perhaps might desire to bypass a subject like this
         altogether. We are called upon by the Lord to contend earnestly for the faith
         (<a href='https://www.biblegateway.com/passage/?search=Jude+3&version=KJV'
@@ -32,14 +32,14 @@
         of God—without welching at any particular moment. Thus we are bound to meet, at various
         points and on various levels, people with whom we disagree.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         We disagree in some areas of Christian doctrine. We disagree as to some details of
         church administration. We disagree as to the way in which certain tasks of the church
         should be pursued. If we are careful to observe the principles that I would like to
         expound in this article, we may find that they are valuable not only in the religious
         field but also in the realms of politics, business and family.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Who does not encounter from time to time people who are not in complete agreement?
         Whether it is between husbands and wives, parents and children, co-workers on the job
         or fellow members in the church, it is impossible to live without disagreement.
@@ -55,7 +55,7 @@
     <p id='one' class='scrollspy'>
         <h6><b>(1) What Do I Owe to the Person Who Differs From Me?</b></h6>
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Many people overlook the first two questions and jump right away to: “How can I cope
         with this? How can I bash this person right down into the ground in order to annihilate
         objections and differences?” Obviously, if we jump to the third question from the
@@ -65,7 +65,7 @@
         have an obligation to the truth, and that has priority over agreement with any
         particular person.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         If someone is not in the truth, we have no right to agree. We have no right even to
         minimize the importance of the difference. Consequently, we owe them neither consent
         nor indifference. But what we owe that person who differs from us, whoever that may be,
@@ -76,7 +76,7 @@
             (Matthew 7:12).
         </a>
     </p>
-    <p class='indentation'>
+    <p class=' '>
         How then do we desire to be treated? <i> First </i>, we want people to know
         what we are saying or meaning. If we are going to voice differences, therefore, we have
         an obligation to make a serious effort to understand the person with whom we differ.
@@ -90,7 +90,7 @@
         she stops talking, we should concentrate on apprehending precisely what his or her
         position is.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         In this respect, Dr. Cornelius Van Til has given us a splendid example. As
         you may know, he expressed very strong objections to the theology of Karl Barth. This
         was so strong that Barth claimed that Van Til simply did not understand him. It has
@@ -106,7 +106,7 @@
         so that we are not voicing our criticism in the absence of knowledge but that we are
         proceeding from the vantage point of real acquaintance.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Even that is not enough, however. Beyond what a person says or writes, <i>
             we must
             attempt to understand what a person means
@@ -121,7 +121,7 @@
         understand what is the meaning that this language is intended to convey.In some cases,
         we may provide an opportunity for an opponent to speak more accurately.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         I have experienced this in my own home. I have noticed that my wife sometimes says
         things like, “You never empty the wastebasket.” Now as a matter of fact, on January 12,
         1994, I did empty the wastebasket. Therefore, the word never is inappropriate! This
@@ -131,7 +131,7 @@
         “never” she often means “rarely” or “not as often as should be”. When she says
         “always,” she means “frequently” or “more often than should be”.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Instead of quibbling as to the words never and always, I would do well to pay attention
         to what she finds objectionable. And indeed, I should be emptying the wastebasket.
         Feminist or not feminist, a husband and father should empty the wastebasket; and
@@ -139,7 +139,7 @@
         Nothing is gained by quibbling about how often this happens. I ought to recognize this
         and be more diligent with it rather than to quote the dictionary.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Similarly, in dealing with those who differ, we ought not to split hairs
         about language just in order to pounce on our opponent because he or she has not used
         accurate wording. It is more effective to seek to apprehend what is meant and then to
@@ -149,7 +149,7 @@
         really want to meet, we might as well try to figure out the meaning rather than to
         quibble on wording.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Moreover, I would suggest that we owe to people who differ from us
         to seek to understand their aims. What is it that they are looking for? What is it that
         makes them tick? What is it that they are recoiling against? What are the experiences,
@@ -159,7 +159,7 @@
         find a point of contact at the very start rather than to move on with an entirely
         defensive or hostile mood?
     </p>
-    <p class='indentation'>
+    <p class=' '>
         As an example it may be observed that in the fourth century
         the heretic <a href='https://en.wikipedia.org/wiki/Arius' target='blank'>Arius</a>,
         and undoubtedly many of his supporters, were especially leery of modalism, a serious
@@ -170,7 +170,7 @@
         did of necessity imply a modalistic view. It did not help that one of his very vocal
         opponents, Marcellus of Ancyra, did, in fact, border dangerously on modalism.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Arguments designed to show the biblical and logical strengths
         of the doctrine of the Son’s full deity or vice versa the weakness of Arius’s
         subordinationism would not be likely to be effective unless the instinctive fear of an
@@ -180,7 +180,7 @@
         dealing with this error might not have been to allay the fear that orthodoxy inevitably
         would lead to modalism.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         In the controversy between <a href='https://en.wikipedia.org/wiki/Calvinism'
                                       target='blank'>
             Calvinism
@@ -196,7 +196,7 @@
         to retain these—even though their logical relation to divine sovereignty remains
         shrouded in a mystery that transcends finite, human logic.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Similarly, the Calvinist should not glibly conclude
         that evangelical Arminians are abandoning the notion of divine sovereignty because they
         assert the freedom of the human will. It is plainly obvious that Arminians pray for the
@@ -207,13 +207,13 @@
         John Wesley, and vice versa that most Arminians do not feel they need to object to
         those of Isaac Watts, Augustus Toplady, or John Newton.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         In summary, I would say we owe it to our opponents to deal with them in such a way that
         they may sense that we have a real interest in them as persons, that we are not simply
         trying to win an argument or show how smart we are, but that we are deeply interested
         in them—and are eager to learn from them as well as to help them.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         One method that I have found helpful in making sure that I have dealt fairly with a
         position that I could not espouse was to assume that a person endorsing that view was
         present in my audience (or was reading what I had written). Then my aim is to represent
@@ -229,7 +229,7 @@
     <p id='two' class='scrollspy'>
         <h6><b>(2)What Can I Learn from Those Who Differ From Me?</b></h6>
     </p>
-    <p class='indentation'>
+    <p class=' '>
         To raise the question, “What do I owe the person who differs from me?”
         is very important, for otherwise any discussion is doomed to remain unproductive. The
         truth that I believe I have grasped must be presented in a spirit of love and
@@ -243,7 +243,7 @@
         Testament prophets, of our Lord in His denunciation of the Pharisees, and of the
         apostles in dealing with various heresies and hypocrisies in the early church.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         These severe judgments were ordinarily aimed at warning members of the flock rather
         than winning over some people who had distanced themselves from the truth of God to a
         point which left no room for the hope of recovery
@@ -272,7 +272,7 @@
         But when dealing with those we have a desire to influence for the good, we need
         imperatively to remain outgoing and gracious.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         When we are sure that our outward approach is proper, we need secondly to
         safeguard the inward benefits of courtesy. We need to ask the question, ‘What can I
         learn from those who differ from me?” It is not censurable selfishness to seek to gain
@@ -280,10 +280,10 @@
         take advantage of opportunities to learn and develop that almost any controversy
         affords us.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         <h6><i>Could I be Wrong?</i></h6>
     </p>
-    <p class='indentation'>
+    <p class=' '>
         The first thing that I should be prepared to learn is that I may be
         wrong and the other person may be right. Obviously, this does not apply to certain
         basic truths of the faith like the Deity of Christ or salvation by grace. The whole
@@ -293,7 +293,7 @@
         there are numerous areas where we are temperamentally inclined to be very assertive and
         in which we can quite possibly be in error.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         When we are unwilling to acknowledge our
         fallibility, we reveal that we are more interested in winning a discussion and
         safeguarding our reputation than in the discovery and triumph of truth.
@@ -303,7 +303,7 @@
         unfailing attachment to the truth and not appear to pretend to a kind of infallibility
         that we are ready to criticize when Roman Catholics claim it for their popes!
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Our reputation will be better served if we show ourselves ready to be corrected when in
         error, rather than if we keep obstinately to our viewpoint when the evidence shows it
         to be wrong. I should welcome correction. It renders a signal service to me! I should
@@ -311,10 +311,10 @@
         your help.” People who are unwilling to acknowledge their mistakes, by contrast, may be
         called stubborn and lose their credibility.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         <h6><i>What are the Dangers?</i></h6>
     </p>
-    <p class='indentation'>
+    <p class=' '>
         In the second place we may learn from one who differs that our presentation, while
         correct as far as it goes, fails to embody the truth in its entirety on the subject in
         view. Although what we assert is true, there are elements of truth that, in our own
@@ -326,7 +326,7 @@
         preclude an innate one-sidedness which results in a caricature that does disservice to
         truth no less than an actual error may do.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Many of the mainline elements of Christianity are thus,
         “two-railed,” if I may express myself in a metaphor. Unity, yet threeness in God,
         immanence yet transcendence, sovereignty of God and yet reality of rational decision,
@@ -339,8 +339,8 @@
         completeness and thus avoid pitfalls created by under-emphasis, over-emphasis and
         omissions. Thus my account will be “full-orbed” rather than “half-baked!”
     </p>
-    <p class='indentation'><h6><i>What are the Dangers?</i></h6></p>
-    <p class='indentation'>
+    <p class=' '><h6><i>What are the Dangers?</i></h6></p>
+    <p class=' '>
         I may learn from those who differ from me that I have not sufficiently perceived
         certain dangers to which my view is exposed and against which I need to be especially
         on guard. I may find out notably that there are certain weighty objections to which I
@@ -360,7 +360,7 @@
             rather established.
         </small>
     </p>
-    <p class='indentation'>
+    <p class=' '>
         The three clauses following ‘yet so as thereby” are specifically designed to ward off
         misunderstanding and to meet objections commonly raised by Arminians or Arminianizing
         divines. The peculiar wisdom of setting up these safeguards in the first
@@ -368,7 +368,7 @@
         century of controversy issuing in rich, balanced and nuanced expression of truth in the
         Westminster standards.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         In France, certain barriers placed on bridges, terraces
         or quays are called “garde-fous”, that is to say “safeguards for the crazy.” They
         provide a fence to prevent those who are careless from failing off the edge. Those who
@@ -376,8 +376,8 @@
         view and to build “garde-fous” there. It would be a pity if we failed to take advantage
         of such an opportunity.
     </p>
-    <p class='indentation'><h6><i>What about Ambiguities?</i></h6></p>
-    <p class='indentation'>
+    <p class=' '><h6><i>What about Ambiguities?</i></h6></p>
+    <p class=' '>
         We may learn from those who object that we are not communicating as we should and that
         they have not rightly understood what we wanted to say. In this we can be benefited
         also, for the whole purpose of speaking (or writing) is to communicate. If we don’t
@@ -387,7 +387,7 @@
         then we are challenged to make a presentation that is clearer, more complete, more
         wholesome, and one that will communicate better.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         We have biblical precedent for this. The apostle Paul, for instance, anticipated
         objections which arise from misunderstanding of his doctrine. In Romans 6:1 he writes
         <i>
@@ -423,14 +423,14 @@
            target='blank'></a>John
         11:12-14, etc.).
     </p>
-    <p class='indentation'>
+    <p class=' '>
         The effort made to clarify our thought for others will often result in clarifying it
         also for ourselves. We may thus secure a firmer hold upon the truth, a better grasp of
         its implications, and relationship to other truths, a more effective way to articulate
         and illustrate it. These are boons for which we may be grateful to those who differ
         from us.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         When we give due attention to what we owe those who differ and what we can learn from
         them, we may be less inclined to proceed in a hostile manner. Our hand will not so
         readily contract into a boxing fist, but will be extended as an instrument of
@@ -459,7 +459,7 @@
     </p>
     <hr>
     <p id='three' class='scrollspy'><h6><b>(3) How Can I Cope with Those Who Differ from Me?</b></h6></p>
-    <p class='indentation'>
+    <p class=' '>
         In the previous two sections, we sought to explore how to derive the maximum benefit
         from controversy both as to those who differ by being sure that we do not fail in our
         duty toward them, and as to ourselves in welcoming an opportunity to learn as well as
@@ -467,7 +467,7 @@
         questions, “What do I owe?” and “What can I learn?”, it is certainly proper to raise
         the query, <i>“How can I cope with those who differ from me?”</i>
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Now “coping” involves naturally two aspects known as “defensive” and
         “offensive.” Unfortunately, these terms are borrowed from the military
         vocabulary and tend to reflect a pugnacious attitude which injects bitterness into
@@ -476,8 +476,8 @@
         simply “passing to the attack.” It may therefore be better to use the adjectives
         “protective” and “constructive” to characterize these two approaches.
     </p>
-    <p class='indentation'><h6><i>Biblical Arguments</i></h6></p>
-    <p class='indentation'>
+    <p class=' '><h6><i>Biblical Arguments</i></h6></p>
+    <p class=' '>
         In evangelical circles biblical arguments carry maximum weight if properly handled, for
         they invoke the authority of God Himself in support of a position. This is what Luther
         so eloquently asserted at the Diet of Worms, and what the Westminster Confession
@@ -490,7 +490,7 @@
             matters of faith or worship (WCF 20, 2).
         </small>
     </p>
-    <p class='indentation'>
+    <p class=' '>
         We need here to be careful to make a reverent use of Scripture, quoting every reference
         in a way that is consistent with its context. This will protect our approach against
         the legitimate criticisms levied against “prooftexting,” a method that lifts scriptural
@@ -505,7 +505,7 @@
         and <a href='https://www.biblegateway.com/passage/?search=Psalm+53.1&version=KJV'
                target='blank'>53:1</a>.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         We must therefore be careful to use the Scripture in such a way that an
         examination of the context will strengthen, not weaken, the argument. Very few things
         are as damaging to a position as a claim to be grounded in the authority of God’s Word,
@@ -514,7 +514,7 @@
         sand, “falls with a great crash” ( <a href='https://www.biblegateway.com/passage/?search=Matthew+7.27&version=KJV'
                                               target='blank'>Matthew 7:27 </a>).
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Likewise, a well-advised person will be careful to avoid passages that
         “boomerang”—passages that are used as proof, but turn out to be more decisive against
         the view advanced. For example, some people quote
@@ -523,7 +523,7 @@
         trembling” and forget that Paul continues, “For it is God who works in you to will and
         to act ....”
     </p>
-    <p class='indentation'>
+    <p class=' '>
         All this demands that we should know the Word of God. God entrusted the sacred
         Scriptures to His people in order that they may search it diligently (
         <a href='https://www.biblegateway.com/passage/?search=John+5.39&version=KJV'
@@ -547,7 +547,7 @@
             2 Timothy 2:15
         </a>), and every child of God ought to aspire to that.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Protectively we may be aware of passages that are often quoted to invalidate a
         stance which we find scriptural. Sometimes we may anticipate this objection
         even before it is raised and be prepared to show how it does not undercut our view.
@@ -558,7 +558,7 @@
         <a href='https://www.biblegateway.com/passage/?search=Ephesians+4.15&version=KJV'
            target='blank'>Ephesians 4:15</a>).
     </p>
-    <p class='indentation'>
+    <p class=' '>
         In some cases it may be possible to show that the interpretation which would see in a
         particular passage an objection to the scriptural truth we are undertaking to advocate
         is simply improper and indefensible because it sets this Scripture in conflict with its
@@ -568,23 +568,23 @@
         Since we are obliged to seek the unity of the truth, a plausible interpretation that
         averts a conflict may well deserve preference.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         To sum up, we must ever strive to take account of the fullness of biblical revelation
         to have the boldness to advance as far as it leads, and the restraint to stop in our
         speculations where the Bible ceases to provide guidance. Polemic Theology in this
         respect is simply biblical light focused in such a way as to assist those who appear
         yet caught in some darkness.
     </p>
-    <p class='indentation'><h6><i>General Arguments</i></h6></p>
-    <p class='indentation'>
+    <p class=' '><h6><i>General Arguments</i></h6></p>
+    <p class=' '>
         These arguments direct their appeal to something other than the actual text of
         Scripture,
         namely to logic, history and tradition. While the authority involved is not on the same
         level as the Bible, the Word of God, it has a bearing on the discussions and must be
         considered by those who wish to make a strong case.
     </p>
-    <p class='indentation'><h6><i>Appeal to Reason</i></h6></p>
-    <p class='indentation'>
+    <p class=' '><h6><i>Appeal to Reason</i></h6></p>
+    <p class=' '>
         Human reason, especially when not guided by divine revelation, is apt to go astray
         either in being unduly influenced by prejudice (what we call “rationalizing”) or when
         reason forgets its proper limits and attempts to apply to the infinite what is valid
@@ -596,7 +596,7 @@
         Rational arguments may therefore be presented with propriety, and those advanced by
         people who differ from us must be addressed.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Constructively, it behooves me to show that my view is in keeping with the
         totality of revealed truth, with the structure of the Christian faith as an
         organism of truth. I will promote the acceptance of an individual tenet if I can show
@@ -604,7 +604,7 @@
         one who differs from me have agreement. For instance, one who accepts the doctrine of
         the Trinity is pretty well bound to confess the deity of Christ and vice versa.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Specifically, it is in order to make plain the damaging or even disastrous
         effects that a departure from the position I advocate will logically entail. In doing
         this, I must carefully distinguish between the view that the other person actually
@@ -614,7 +614,7 @@
         adversaries were not in fact located, but where it was thought they were logically
         bound to end up.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         To struggle with a caricature is not a “big deal.” And to knock down a straw man does
         not entitle one to the Distinguished Service Cross! To be sure, it is a part of the
         proper strategy to show those who differ that their view involves damaging implications
@@ -622,7 +622,7 @@
         it is the present position rather than anticipated developments that must be dealt
         with.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Protectively, I need to face the objections that are raised against my view.
         Some of them are irrelevant because they are based on a misunderstanding of the issues.
         To deal with these will help me to clarify my position and to reassert it with proper
@@ -634,7 +634,7 @@
         peripheral, that is to say, difficulties that may or may not be resolved rather than
         considerations that invalidate a position otherwise established.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         For instance, some alleged contradictions between two passages of Scripture represent a
         difficulty for the doctrine of inerrancy rather than a discreditation of this otherwise
         well-established tenet of the faith. Obviously the most advantageous situation is found
@@ -645,7 +645,7 @@
         superficial reader that in this text Jesus repudiates the authority of the Law, when in
         fact He confirms it and reinforces it by His spiritual interpretation.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Furthermore, it is sometimes effective to challenge a person who differs from us to
         articulate an alternative approach which we may then proceed to criticize. For
         instance, a person who denies the deity of Christ may well be pressed to give his or
@@ -658,8 +658,8 @@
         “once for all entrusted to the saints” (<a href='https://www.biblegateway.com/passage/?search=Jude+3&version=KJV'
                                                    target='blank'> Jude 3</a>).
     </p>
-    <p class='indentation'><h6><i>Appeal to History and Tradition</i></h6></p>
-    <p class='indentation'>
+    <p class=' '><h6><i>Appeal to History and Tradition</i></h6></p>
+    <p class=' '>
         The course of history is a remarkable laboratory that permits us to observe the
         probable developments that issue from the holding of certain tenets. The decisions of
         councils or the pronouncements of confessions of faith are often geared to guard
@@ -673,7 +673,7 @@
         of the mistakes of the Roman Catholic Church.
 
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Constructively, it is proper for me to attempt to prove that I am in line with
         orthodoxy in general and specifically with statements of faith that have received wide
         acceptance or that are part of the subordinate standards of my church or of the church
@@ -684,7 +684,7 @@
         Westminster Standards should turn out to be right, while these revered creeds, tested
         as they were through centuries of Christian thinking, should be wrong.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Specifically, the position of the one who differs may so closely
         approximate a well-known heresy adjudged as heterodox that the course of history may
         provide a portrayal of what happens to those who entertain it. The disastrous course of
@@ -695,7 +695,7 @@
         tendency prevailed, as well as to the lands that had been conquered by the Vandals with
         their Arian commitment.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Those who would gloat over the increasing heterodoxy of the Arminian movement in the
         Netherlands should probably be somewhat sobered in thinking of the destiny of Calvinism
         in New England, which moved from high orthodoxy around 1650 to the rather massive
@@ -703,7 +703,7 @@
         remarks do not invalidate the value of the lessons of history, but merely admonish to
         caution in applying them.
     </p>
-    <p class='indentation'>
+    <p class=' '>
         Protectively, the course of action would parallel closely what was described above.
         Objections raised against our view may be shown to be counterproductive, because they
         support rather than undermine our view. They also may be judged irrelevant, because
@@ -711,8 +711,8 @@
         view. Or they may simply be inconsequential, because they have only a peripheral
         bearing on the issues.
     </p>
-    <p class='indentation'><h6><i>Christian’s Goal</i></h6></p>
-    <p class='indentation'>
+    <p class=' '><h6><i>Christian’s Goal</i></h6></p>
+    <p class=' '>
         Perhaps the most important consideration for the Christian is to remain aware at all
         times of the goal to be achieved. It is the consistent perception of this goal that
         will give a basic orientation to the whole discussion: Are we attempting to win an
@@ -720,7 +720,7 @@
         we seeking to win another person whom we perceive as enmeshed in error or inadequacy by
         exposing him or her to the truth and light that God has given to us?
     </p>
-    <p class='indentation'>
+    <p class=' '>
         If the former be true, it is not surprising if our efforts are vain: we should be like
         physicians who take care of patients simply in order to accredit some pet theory. If
         the latter be true, we will naturally be winsome. This will increase our patience when
@@ -755,7 +755,7 @@
         </a>). His witness was used by God to win over
         perhaps the ablest of his adversaries, who was to be the great apostle Paul!
     </p>
-    <p class='indentation'>
+    <p class=' '>
         A Christian who carries on discussions with those who differ should not be subject to
         the psychology of the boxing ring where the contestants are bent upon demolishing one
         another. Rather “The Lord’s servant must not quarrel: instead, he must be kind to
