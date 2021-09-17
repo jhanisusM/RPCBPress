@@ -3,6 +3,53 @@
     margin: 0;
 }
 
+#brandlogo {
+    font-family: 'Cormorant SC', serif;
+    font-weight: 500;
+}
+
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+@media only screen and (min-width:320px) and (min-device-width: 380px) {
+    #brandlogo {
+        font-size: 2.45em;
+    }
+}
+
+/* smartphones, Android phones, landscape iPhone */
+@media only screen and (min-width: 400px) {
+    #brandlogo {
+        font-size: 2em;
+    }
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (min-width:600px) {
+    #brandlogo {
+        font-size: 3rem;
+    }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:801px) {
+    #brandlogo {
+        font-size: 3em;
+    }
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+    #brandlogo {
+        font-size: 4em;
+    }
+}
+
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+    #brandlogo {
+        font-size: 4em;
+    }
+}
+
 audio {
     width: 300px;
     box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
@@ -38,11 +85,11 @@ audio {
     text-transform: uppercase;
 }
 
-.Title-Card,.Headers{
+.Title-Card, .Headers {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.Body-Card{
+.Body-Card {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -54,4 +101,10 @@ audio {
     border: 0;
     border-radius: 4px;
     font-size: 1em
+}
+
+.Publication-Button:hover {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
 }

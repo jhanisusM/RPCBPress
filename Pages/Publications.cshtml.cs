@@ -65,7 +65,7 @@ namespace RPClassicalBaptistPress.Pages
                 //Suffer The Children
                 new Publications
                 {
-                    PurchaseBtn = "<br/><a class='Publication-Button' href='https://www.amazon.com/Suffer-Children-tragic-legacies-Bushnell-ebook/dp/B072FHM89F' target='blank'> Click to Purchase</a>",
+                    PurchaseBtn = "<a class='Publication-Button' type='button' href='https://www.amazon.com/Suffer-Children-tragic-legacies-Bushnell-ebook/dp/B072FHM89F' target='blank'> Click to purchase</a>",
                     Device = "Kindle Edition",
                     Title = "Suffer The Children: (The tragic legacies of Finney & Bushnell)",
                     DescriptionParagraph = "<p class=' '> No one lives in isolation. Everyone functions in an environment that is formed by what has occurred in the past. Have you considered how very differently child evangelism differs from past eras? Are you aware of the influence of men now forgotten on how the Gospel is presented to children? In this book you will be introduced to the influences of two men you likely have never heard of before. Just as importantly, it is likely that one or both of these influential men is unknown to your pastor. This book begins to set the record straight so parents and pastors will not inadvertently be more barriers than escorts of children coming to the Savior.</p>",
@@ -85,7 +85,7 @@ namespace RPClassicalBaptistPress.Pages
                 //Polemic Theology: How To Deal With Those Who Differ From Us
                 new Publications
                 {
-                    PurchaseBtn ="<a type='button' class='Publication-Button' href='./assets/polemicTheology.pdf' target='blank'> CLICK TO READ </a>",
+                    PurchaseBtn ="<a type='button' class='Publication-Button' href='./assets/polemicTheology.pdf' target='blank'> Click to read </a>",
                     Device = "Online",
                     Title = "Polemic Theology: How To Deal With Those Who Differ From Us",
                     DescriptionParagraph = PolemicTheology,
@@ -95,7 +95,7 @@ namespace RPClassicalBaptistPress.Pages
                 //Halloween, A Result of Religious Apostasy
                 new Publications
                 {
-                    PurchaseBtn = "<br/><a class='Publication-Button'href='./assets/Halloween_A_Result_of_Religious_Apostasy.pdf' target='blank'> Click to Read </a>",
+                    PurchaseBtn = "<a type='button' class='Publication-Button' href='./assets/Halloween_A_Result_of_Religious_Apostasy.pdf' target='blank'> Click to read </a>",
                     Device = "Online",
                     Title = "Halloween, A Result of Religious Apostasy",
                     DescriptionParagraph = "<p class=' '> This time of year Baptist churches face the dilemma of a rapidly approaching Halloween season and all of its attendant issues. Those I serve as pastor have been thoroughly instructed over the years and buy into our ministry's annual Christian Alternative to Halloween. Perhaps you do something along that line, as well. But what of those added to the church since last Halloween? How do you address the issue for new families without rehashing the whole subject all over again when most in the congregation already convinced of what's right? </ p >",
