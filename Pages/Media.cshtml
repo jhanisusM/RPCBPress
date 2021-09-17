@@ -7,14 +7,14 @@
 }
 <!-- Container element -->
 <div class="parallax"></div>
-<section class="container" id="wrap">
-    <div class="row">
-        <div class="col">
-            <h3 class="Section-Title center" id="header">Media</h3>
-            <hr>
-            <br>
-        </div>
+<header class="row">
+    <div class="col">
+        <h3 class="Section-Title center" id="header">Media</h3>
+        <hr>
+        <br>
     </div>
+</header>
+<main>
     @foreach (var mfile in mediaFilesInfo)
     {
         <div class="row ">
@@ -31,4 +31,4 @@
         </div>
         <hr />
     }
-</section>
+</main>

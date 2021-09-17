@@ -35,7 +35,7 @@ namespace RPClassicalBaptistPress.Pages
                 // 28 Truths
                 new Publications
                 {
-                    PurchaseBtn="<button class='Publication-Button' id = 'checkout-button-sku_FmzE9du2jC7IGE' role ='link' type = 'button' >Click to Purchase(Secure Site)</button>",
+                    PurchaseBtn="<button class='Publication-Button' id = 'checkout-button-sku_FmzE9du2jC7IGE' role ='link' type = 'button' >Click to Purchase(Secure Site) <span class='material-icons md-10'>shopping_cart</span></button>",
                     Device="Print",
                     Title=" The Church of Jesus Christ: 28 Truths Every Christian Ought to Learn",
                     DescriptionParagraph="<p class=' '>An exhaustive guide to the New Testament's teaching into the nature of the Church of Jesus Christ.</p>",
@@ -45,7 +45,7 @@ namespace RPClassicalBaptistPress.Pages
                 //LeaderGuide
                 new Publications
                 {
-                    PurchaseBtn="<button class='Publication-Button' id ='checkout-button-sku_G96NoRLr9JV2zC' role ='link' type = 'button' >Click to Purchase(Secure Site)</button>",
+                    PurchaseBtn="<button class='Publication-Button' id ='checkout-button-sku_G96NoRLr9JV2zC' role ='link' type = 'button' >Click to Purchase(Secure Site) <span class='material-icons md-10'>shopping_cart</span></button>",
                     Device="Print",
                     Title="A Basic <em>Leader's</em> Manual for the Study of Ecclesiology",
                     DescriptionParagraph="<p class=' '> An exhaustive <em>Leader's</em> guide to the New Testament's teaching into the nature of the Church of Jesus Christ.</p>",
@@ -55,7 +55,7 @@ namespace RPClassicalBaptistPress.Pages
                 //Learners aderGuide
                 new Publications
                 {
-                    PurchaseBtn = "<button class='Publication-Button' id ='checkout-button-sku_G96fzawHrMNbcC' role = 'link'  type = 'button'> Click to Purchase(Secure Site)</button>",
+                    PurchaseBtn = "<button class='Publication-Button' id ='checkout-button-sku_G96fzawHrMNbcC' role = 'link'  type = 'button'> Click to Purchase(Secure Site) <span class='material-icons md-10'>shopping_cart</span></button>",
                     Device = "Print",
                     Title = "A Basic <em>Learner's</em> Manual for the Study of Ecclesiology",
                     DescriptionParagraph = "<p class=' '> An exhaustive <em>Learner's</em> guide to the New Testament's teaching into the nature of the Church of Jesus Christ.</p>",
@@ -65,7 +65,7 @@ namespace RPClassicalBaptistPress.Pages
                 //Suffer The Children
                 new Publications
                 {
-                    PurchaseBtn = "<a class='Publication-Button' type='button' href='https://www.amazon.com/Suffer-Children-tragic-legacies-Bushnell-ebook/dp/B072FHM89F' target='blank'> Click to purchase</a>",
+                    PurchaseBtn = "<a class='Publication-Button' type='button' href='https://www.amazon.com/Suffer-Children-tragic-legacies-Bushnell-ebook/dp/B072FHM89F' target='blank'>Click to purchase <span class='material-icons md-10'>shopping_cart</span></a>",
                     Device = "Kindle Edition",
                     Title = "Suffer The Children: (The tragic legacies of Finney & Bushnell)",
                     DescriptionParagraph = "<p class=' '> No one lives in isolation. Everyone functions in an environment that is formed by what has occurred in the past. Have you considered how very differently child evangelism differs from past eras? Are you aware of the influence of men now forgotten on how the Gospel is presented to children? In this book you will be introduced to the influences of two men you likely have never heard of before. Just as importantly, it is likely that one or both of these influential men is unknown to your pastor. This book begins to set the record straight so parents and pastors will not inadvertently be more barriers than escorts of children coming to the Savior.</p>",
@@ -75,7 +75,7 @@ namespace RPClassicalBaptistPress.Pages
                 //The Blight of Islam (Revised)
                 new Publications
                 {
-                    PurchaseBtn = "<a type='button' class='Publication-Button' href='https://www.amazon.com/Blight-Islam-Revised-John-Waldrip-ebook/dp/B07HLLNHCC/' target='blank'> Click to Purchase (Amazon)</a> <br/> <button class='Publication-Button' id='checkout-button-sku_G95Ms5hhIOHwyh' role='link' type='button' >Click to Purchase (Secure Site)</button>",
+                    PurchaseBtn = "<a type='button' class='Publication-Button' href='https://www.amazon.com/Blight-Islam-Revised-John-Waldrip-ebook/dp/B07HLLNHCC/' target='blank'> Click to Purchase (Amazon) <span class='material-icons md-10'>shopping_cart</span></a> <br/> <button class='Publication-Button' id='checkout-button-sku_G95Ms5hhIOHwyh' role='link' type='button' >Click to Purchase (Secure Site) <span class='material-icons md-10'>shopping_cart</span></button>",
                     Device = "Kindle Edition",
                     Title = "The Blight of Islam (Revised)",
                     DescriptionParagraph = "<p class=' '>A well-reasoned comparison and contrast of the two largest religions in the world, the only two religions claiming their holy books were given by revelation, and the only two religions that claim to be for all humanity. The sources used are those of the two religious faiths to gain insight into the founders of the two religions, Jesus and Mohammed.</p>",
@@ -85,7 +85,7 @@ namespace RPClassicalBaptistPress.Pages
                 //Polemic Theology: How To Deal With Those Who Differ From Us
                 new Publications
                 {
-                    PurchaseBtn ="<a type='button' class='Publication-Button' href='./assets/polemicTheology.pdf' target='blank'> Click to read </a>",
+                    PurchaseBtn ="<a type='button' class='Publication-Button' href='./assets/polemicTheology.pdf' target='blank'> Click to read  <span class='material-icons md-10'>auto_stories</span></a>",
                     Device = "Online",
                     Title = "Polemic Theology: How To Deal With Those Who Differ From Us",
                     DescriptionParagraph = PolemicTheology,
@@ -95,7 +95,7 @@ namespace RPClassicalBaptistPress.Pages
                 //Halloween, A Result of Religious Apostasy
                 new Publications
                 {
-                    PurchaseBtn = "<a type='button' class='Publication-Button' href='./assets/Halloween_A_Result_of_Religious_Apostasy.pdf' target='blank'> Click to read </a>",
+                    PurchaseBtn = "<a type='button' class='Publication-Button' href='./assets/Halloween_A_Result_of_Religious_Apostasy.pdf' target='blank'> Click to read <span class='material-icons md-10'>auto_stories</span></a>",
                     Device = "Online",
                     Title = "Halloween, A Result of Religious Apostasy",
                     DescriptionParagraph = "<p class=' '> This time of year Baptist churches face the dilemma of a rapidly approaching Halloween season and all of its attendant issues. Those I serve as pastor have been thoroughly instructed over the years and buy into our ministry's annual Christian Alternative to Halloween. Perhaps you do something along that line, as well. But what of those added to the church since last Halloween? How do you address the issue for new families without rehashing the whole subject all over again when most in the congregation already convinced of what's right? </ p >",

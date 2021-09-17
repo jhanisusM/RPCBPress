@@ -6,41 +6,40 @@
     ViewData["ParallaxImgPath"] = "../images/press.jpg";
     var publicationsInfo = pubMod.GetPublicationInfo();
 }
-
 <script type="text/javascript" src="https://js.stripe.com/v3"></script>
-<section class="container" id="wrap">
-    <div class="row">
-        <div class="col">
-            <h3 class="Section-Title center" id="header">Publications</h3>
-            <hr>
-            <br>
-        </div>
+<header class="row">
+    <div class="col">
+        <h3 class="Section-Title center" id="header">Publications</h3>
+        <hr>
+        <br>
     </div>
-    <br />
+</header>
+<br />
+<main>
     @foreach (var pub in publicationsInfo)
     {
-        <div class="row">
-            <div class="col-sm">
-                @Html.Raw(pub.EmbeddedHTMLPublicationImg)
-                <br />
-                @Html.Raw(pub.PurchaseBtn)
+    <div class="row">
+        <div class="col-sm">
+            @Html.Raw(pub.EmbeddedHTMLPublicationImg)
+            <br />
+            @Html.Raw(pub.PurchaseBtn)
+        </div>
+        <div id="error-message"></div>
+        <div class="col">
+            <h3 class="Title-Card">@Html.Raw(pub.Title)</h3>
+            <div>
+                <strong>@pub.Device</strong>
+                <small>By @pub.Author</small>
             </div>
-            <div id="error-message"></div>
-            <div class="col">
-                <h3 class="Title-Card">@Html.Raw(pub.Title)</h3>
-                <div>
-                    <strong>@pub.Device</strong>
-                    <small>By @pub.Author</small>
-                </div>
-                <br />
-                <div class="Body-Card">
-                    @Html.Raw(pub.DescriptionParagraph)
-                </div>
+            <br />
+            <div class="Body-Card">
+                @Html.Raw(pub.DescriptionParagraph)
             </div>
         </div>
-        <hr />
+    </div>
+    <hr />
     }
-</section>
+</main>
 
 <script type="text/javascript">
     // 28 Truths
